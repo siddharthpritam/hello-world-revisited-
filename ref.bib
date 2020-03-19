@@ -1,0 +1,4816 @@
+%
+% $Id: delrefs.bib,v 1.29 2007/05/31 18:14:24 rhdyer Exp $
+%
+% copied from dgp_refs.bib 20061119
+%
+% WARNING: bibtex doesn't seem to entirely ignore comments. Specifically,
+% a commented out at.string declaration still gets parsed, and will override
+% a previous such declaration of the same name.
+%
+% 20090807
+% Okay, I read a bit about this. Everything is a comment to BibTex until 
+% it hits an at sign. Then that block is parsed. So you can't have an at sign
+% in a comment. To comment out a block or string def -- remove the at sign.
+%
+% See
+% http://artis.imag.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex_summary.html
+%
+% As recommended, from now on bibtex author enteries will be 
+% Lastname, Firstname (Google Scholar gives them this way anyway)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+% For consistency, lets try to use strings for common proceedings
+
+%SIGGRAPH
+@string{sigtitle = {{ACM SIGGRAPH}}}
+%siggraph publisher (leave null, or: ACM):
+@string{sigpub = {}}
+% sigraph papers published after ???? are journal articles
+@string{sigjournal = {{ACM} Trans. Graph.}}
+
+% Eurographics                  
+@string{eurographics = {Computer Graphics Forum 
+                       (Special Issue of Eurographics)}}
+
+%SGP ACM Symposium on Geometry Processing
+@string{sgptitle = {Symp. Geometry Processing}}
+@string{sgpjournal = {Computer Graphics Forum (Special Issue of Symp.
+                   Geometry Processing)}}
+
+%SCG ACM Symposium on Computational Geometry
+% {Symp. Comp. Geom.}}                  
+@string{scgtitle = {SoCG}}
+
+%SPM ACM Symposium on Solid and Physical Modeling
+@string{spmtitle = {Symp. Solid and Physical Modeling}}
+
+%SMI IEEE Shape Modelling International
+@string{smititle = {Shape Modelling International}}
+
+%GMP Geometric Modelling and Processing
+@string{gmptitle = {Geometric Modeling and Processing}}
+
+%Meshing Rountable (Proc. of nth International Meshing Roundtable)
+@string{mrttitle = {Meshing Roundtable}}
+
+%SODA ACM-SIAM Symposium on Discrete Algorithms
+% {Symp. on Discrete Algorithms}}
+@string{sodatitle = {SODA}}
+
+%STOC ACM Sypmposium on Theory of Computing
+@string{stoctitle = {STOC}}
+
+
+%VIS IEEE Visualization
+@string{vistitle = {{IEEE} Visualization}}
+@string{vispub = {}}
+
+%%%%%% Journals %%%%%%%
+
+% Computer Graphics Forum
+@string{CGFtitle = {Computer Graphics Forum}}
+
+% Discrete and Computational Geometry
+@string{DCGtitle = {Discrete \& Comp. Geom.}}
+
+@string{CGTAtitle = {Comput. Geom. Theory \& Appl.}}
+
+@string{IJCGAtitle
+= 
+{Int. J. Comp. Geom. \& Appl.} } 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% My Publications
+
+@ARTICLE{boissonnat2014tancplx.dcg,
+AUTHOR = "Jean-Daniel Boissonnat and Arijit Ghosh",
+TITLE = "Manifold Reconstruction Using Tangential {D}elaunay Complexes",
+JOURNAL = "Discrete \& Computational Geometry",
+PAGES = {221-267},
+YEAR = {2014},
+  }
+
+@article{boissonnat2014flatpert,
+  title =  {{D}elaunay stability via perturbations},
+  author =   {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+  journal={International Journal of Computational Geometry \& Applications},
+  volume={24},
+  number={02},
+  pages={125--152},
+  year={2014},
+  publisher={World Scientific}
+}
+
+@article{boissonnat2013stab1,
+  title =  {The Stability of {D}elaunay Triangulations},
+  author =   {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+  journal={International Journal of Computational Geometry \& Applications},
+  volume={23},
+  number={04n05},
+  pages={303--333},
+  year={2013},
+  publisher={World Scientific}
+}
+
+@article{dey2011smi,
+  author =   {Dey, T. K. and Dyer, R. and Wang, L.},
+  title =  {Localized Cocone surface reconstruction},
+  journal =  {Computers and Graphics (Special Issue of Shape
+                  Modeling International)},
+  volume =   {35},
+  number =   {3},
+  pages =  {483--491},
+  year =   {2011}
+}                  
+
+@article{olson2011,
+  author =   {Olson, M. and Dyer, R. and Sheffer, A. and Zhang,
+                  H.},
+  title =  {Point set silhouettes via local reconstruction},
+  journal =  {Computers and Graphics (Special Issue of Shape
+                  Modeling International)},
+  volume =   {35},
+  number =   {3},
+  pages =  {500--509},
+  year =   {2011}
+}                  
+
+@phdthesis{dyer2010thesis,
+  author =   {R. Dyer},
+  title =  {Self-{D}elaunay meshes for surfaces},
+  school =   {Simon Fraser University},
+  year =   {2010},
+  address =  {Burnaby, Canada}
+}
+
+@inproceedings{dyer2009gpm,
+  author =       {R. Dyer and H. Zhang and T. M\"{o}ller},
+  title =        {{G}abriel meshes and {D}elaunay edge flips},
+  booktitle =    {SIAM/ACM Conference on Geometric and Physical Modeling},
+  pages =        {295--300},
+  year =         {2009}
+}
+
+@incollection{entezari2009mv,
+  author =   {A. Entezari and R. Dyer and T.  M\"{o}ller},
+  title =  {From sphere packing to the theory of optimal lattice
+                  sampling},
+  booktitle =  {Mathematical Foundations of Scientific
+                  Visualization, Computer Graphics, and Massive Data
+                  Exploration},
+  year =   {2009},
+  pages =  {227--225},
+  editor =   {Torsten M\"oller and Bernd Hamann and Robert
+                  Russell},
+  publisher =  {Springer}
+}
+
+@article{zhang2010cgf,
+  author =   {H. Zhang and O. van Kaick and R. Dyer},
+  title =  {Spectral Mesh Processing},
+  journal =  {Computer Graphics Forum},
+  volume =   {29},
+  number =   {6},
+  pages =  {1865--1894},
+  year =   {2010}
+}
+
+@inproceedings{zhang2007star,
+  author =   {H. Zhang and O. van Kaick and R. Dyer},
+  title =  {Spectral Methods for Mesh Processing and Analysis},
+  booktitle =  {Proc. of Eurographics State-of-the-art Report},
+  pages =  {1-22},
+  year =   {2007}
+}
+
+@article{dyer2008sgp,
+  author =   {R. Dyer and H. Zhang and T. M\"{o}ller},
+  title =  {Surface sampling and the intrinsic {V}oronoi
+                  diagram},
+  journal =  sgpjournal,
+  year =   {2008},
+  volume =   {27},
+  number =   {5},
+  pages =  {1393--1402}
+}
+
+@inproceedings{dyer2007sgp,
+  author =   {R. Dyer and H. Zhang and T. M\"{o}ller},
+  title =  {{D}elaunay mesh Construction},
+  booktitle =  sgptitle,
+  pages =  {271--282},
+  year =   {2007}
+}
+
+@inproceedings{dyer2007spm,
+  author =   {R. Dyer and H. Zhang and T. M\"{o}ller},
+  title =  {{V}oronoi-{D}elaunay Duality and {D}elaunay Meshes},
+  booktitle =  spmtitle,
+  pages =  {415--420},
+  year =   {2007}
+}
+
+@inproceedings{entezari2004,
+  author =   {A. Entezari and R. Dyer and T.  M\"{o}ller},
+  title =  {Linear and cubic box splines for the body centered
+                  cubic lattice},
+  booktitle =  {IEEE Visualization},
+  pages =  {11--18},
+  year =   {2004}
+}
+
+@mastersthesis{dyer1996,
+  author =   {R. Dyer},
+  title =  {Vari\'et\'es gradu\'ees, $\underline{G}$-faisceaux
+                  et le th\'eor\`eme de Batchelor},
+  school =   {Universit\'e de Montr\'eal},
+  year =   {1996},
+  url =
+                  {http://www.cs.sfu.ca/~rhdyer/personal/pubs/masters_thesis.pdf}
+}
+
+%%%%%%%%%% tech reports %%%%%%%%%%
+
+@article{dyer2014riemsplx.arxiv,
+  author =   {Dyer, R. and Vegter, G. and Wintraecken, M.},
+  title =  {Riemannian simplices and triangulations},
+  note =   {Preprint: arXiv:1406.3740},
+  eprint =   {1406.3740},
+  url =    {http://arxiv.org/abs/1406.3740},
+  year =   {2014}
+}
+                  
+%  note =  {(also: arXiv:1311.0117)},
+@techreport{boissonnat2013manmesh.inria,
+  author =   {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+  title =  {{D}elaunay triangulation of manifolds},
+  institution =  {INRIA},
+  type =   {Research Report},
+  number =   {RR-8389},
+  year =   {2013}
+}
+
+%  note =  {(also: arXiv:1310.7696)},
+@techreport{boissonnat2013flatpert.inria,
+  title =  {{D}elaunay stability via perturbations},
+  author =   {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+  type =   {Research Report},
+  institution =  {INRIA},
+  number =   {RR-8275},
+  year =   {2013},
+}
+
+@techreport{boissonnat2013stab2.inria,
+  title =  {Constructing Intrinsic {D}elaunay Triangulations of
+                  Submanifolds},
+  author =   {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+  type =   {Research Report},
+  institution =  {INRIA},
+  number =   {RR-8273},
+  year =   {2013},
+  hal_id =   {hal-00804878},
+  url =    {http://hal.inria.fr/hal-00804878},
+  pdf =    {http://hal.inria.fr/hal-00804878/PDF/RR-8273.pdf},
+  note =   {arXiv:1303.6493}
+}
+
+%Deprecated: journal version is out
+@techreport{boissonnat2013stab1.inria,
+  title =  {The Stability of {D}elaunay Triangulations},
+  author =   {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+  type =   {Research Report},
+  institution =  {INRIA},
+  number =   {RR-8276},
+  year =   {2013},
+  note =   {(to appear in } # IJCGAtitle # { special issue for
+                  SoCG 2012)}
+}
+                  
+                  
+@techreport{boissonnat2012stab2.cgl,
+  author =   {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+  title =  {Constructing intrinsic {D}elaunay triangulations of
+                  submanifolds},
+  number =   {CGL-TR-26},
+  institution =  {Computational Geometric Learning},
+  url =    {http://cgl.uni-jena.de/Publications/WebHome},
+  year =   {2012}
+}                  
+
+
+@techreport{boissonnat2012stab1.cgl,
+  author =   {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+  title =  {{D}elaunay-type structures for manifolds {I}: Stability},
+  number =   {CGL-TR-25},
+  institution =  {Computational Geometric Learning},
+  url =    {http://cgl.uni-jena.de/Publications/WebHome},
+  note =   {http://cgl.uni-jena.de/Publications/WebHome},
+  year =   {2012}
+}
+
+@techreport{boissonnat2011cgl,
+  author =   {Boissonnat, J.-D. and Dyer, R. and Ghosh, A. and
+                  Oudot, S.},
+  title =  {Equating the witness and restricted {D}elaunay
+                  complexes},
+  number =   {CGL-TR-24},
+  institution =  {Computational Geometric Learning},
+  url =    {http://cgl.uni-jena.de/Publications/WebHome},
+  note =   {http://cgl.uni-jena.de/Publications/WebHome},
+  year =   {2011}
+}
+
+@techreport{dyer2009negdual.tr,
+  author =   {R. Dyer and S. Schaefer},
+  title =  {Circumcentric dual cells with negative area},
+  number =   {TR 2009-6},
+  institution =  {Simon Fraser University},
+  note =   {SFU-CMPT},
+  year =   {2009}
+}
+
+@techreport{dyer2009depth.tr,
+  author =   {R. Dyer and H. Zhang and T. M\"{o}ller},
+  title =  {A survey of {D}elaunay structures for surface
+                  representation},
+  number =   {TR 2009-01},
+  institution =  {Simon Fraser University},
+  note =   {SFU-CMPT},
+  year =   {2009}
+}                  
+
+@techreport{dyer2008tr,
+  author =   {R. Dyer and H. Zhang and T. M\"{o}ller},
+  title =  {Observations on {G}abriel meshes and {D}elaunay edge
+                  flips},
+  number =   {TR 2008-22},
+  institution =  {Simon Fraser University},
+  note =   {SFU-CMPT},
+  year =   {2008}
+}
+
+@techreport{dyer2007tr,
+  author =   {R. Dyer and H. Zhang and T. M\"{o}ller},
+  title =  {On {V}oronoi-{D}elaunay Duality and {D}elaunay
+                  Meshes},
+  institution =  {Simon Fraser University},
+  number =   {TR 2007-04},
+  note =   {SFU-CMPT},
+  year =   {2007}
+}
+
+@techreport{dyer2007spec.tr,
+  author =   {Ramsay Dyer and Hao Zhang and Torsten M\"{o}ller and
+                  Andrew Clements},
+  title =  {An Investigation of the Spectral Robustness of Mesh
+                  {L}aplacians},
+  institution =  {Simon Fraser University},
+  number =   {TR 2007-17},
+  note =   {SFU-CMPT},
+  year =   {2007}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%% Stab cruft %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%DEPRECATED
+@Comment misc{boissonnat2012stab1,
+@Comment   author =  {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+@Comment   title =   {The stability of {D}elaunay triangulations},
+@Comment   note =  {submitted to } # IJCGAtitle # { (special issue for
+@Comment                   SoCG)},
+@Comment   year =  {2012}
+@Comment }
+                  
+% referenced by SoCG paper
+                  
+@Comment % does not exist -- referenced by SoCG paper
+
+@Comment % 
+@Comment techreport{boissonnat2012con.stab.tr,
+@Comment   author =  {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+@Comment   title =   {{D}elaunay-type structures for manifolds {II}:
+@Comment                   Construction},
+@Comment   number =  {CGL-TR-??},
+@Comment   institution =   {Computational Geometric Learning},
+@Comment   url =     {http://cgl.uni-jena.de/Publications/WebHome},
+@Comment   note =  {http://cgl.uni-jena.de/Publications/WebHome},
+@Comment   year =  {2012}
+@Comment }
+
+@Comment misc{boissonnat2011stability,
+@Comment   author =  {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+@Comment   title =   {Stability of {D}elaunay-type structures for
+@Comment                   manifolds},
+@Comment   note =  {
+@Comment                   ftp://ftp-sop.inria.fr/members/Ramsay.Dyer/papers/delstab.pdf
+@Comment                   },
+@Comment   year =  {2011}
+@Comment }
+
+@Comment % referenced in Stab 1: IJCGA paper
+@Comment misc{boissonnat2012con.intrinsic,
+@Comment   author =  {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+@Comment   title =   {Constructing intrinsic {D}elaunay triangulations of
+@Comment                   submanifolds},
+@Comment   note =  {in preparation},
+@Comment   year =  {2012}
+@Comment }
+
+@Comment misc{boissonnat2012stab,
+@Comment   author =  {Boissonnat, J.-D. and Dyer, R. and Ghosh, A.},
+@Comment   title =   {Stability of {D}elaunay-type structures for
+@Comment                   manifolds},
+@Comment   note =  {In preparation},
+@Comment   year =  {2012}
+@Comment }
+
+                  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% VIS refs, from file:
+% $Id: visrefs.bib,v 1.1 2005/02/01 20:58:27 rhdyer Exp $
+% 20050201
+%
+
+@inproceedings{karni2002,
+  author =   {Zachi Karni and Alexander Bogomjakov Craig Gotsman},
+  title =  {Efficient Compression and Rendering of
+                  Multi-Resolution Meshes},
+  booktitle =  vistitle,
+  publisher =  vispub,
+  year =   {2002}
+}
+
+@inproceedings{pauly2002,
+  author =   {Mark Pauly and Markus Gross},
+  title =  {Efficient Simplification of Point-Sampled Surfaces},
+  booktitle =  vistitle,
+  publisher =  vispub,
+  pages =  {163--170},                  
+  year =   2002
+}
+
+@inproceedings{tasdizen2002,
+  author =   {T. Tasdizen and R. Whitaker and P. Burchard and
+                  S. Osher},
+  title =  {Geometric Surface Smoothing via Anisotropic
+                  Diffusion of Normals},
+  booktitle =  vistitle,
+  publisher =  vispub,
+  year =   2002
+}
+
+@inproceedings{sorkine2002,
+  author =   {O. Sorkine and D. Cohen-Or and R. Goldenthal and
+                  D. Lischinski},
+  title =  {Bounded-distortion Piecewise Mesh Parameterization},
+  booktitle =  vistitle,
+  publisher =  vispub,
+  year =   2002
+}
+
+@inproceedings{alexa2001,
+  author =   {Marc Alexa and Johannes Behr and Daniel Cohen-Or and
+                  Shachar Fleishman and David Levin and Claudio
+                  T. Silva},
+  title =  {Point Set Surfaces},
+  booktitle =  vistitle,
+  publisher =  vispub,
+  pages =  {21--28},
+  year =   2001
+}
+
+@inproceedings{isenburg2001,
+  author =   {Martin Isenburg and Stefan Gumhold and Craig Gotsman},
+  title =  {Connectivity Shapes},
+  booktitle =  vistitle,
+  publisher =  vispub,
+  year =   {2001}
+}
+
+%  author =  {Udo Adamy and Joachim Giesen and Matthias John},
+@inproceedings{adamy2000,
+  author =   {U. Adamy and J. Giesen and M. John},
+  title =  {New Techniques for Topologically Correct Surface
+                  Reconstruction},
+  booktitle =  vistitle,
+  publisher =  vispub,
+  pages =  {373--380},
+  year =   {2000}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  SIGGRAPH refs, from file:
+% $Id: sigrefs.bib,v 1.1 2005/02/01 20:58:26 rhdyer Exp $
+% 20040201
+%
+%@string{sigtitle = {ACM SIGGRAPH}}
+%@string{sigpub = {}}
+
+%  author =  {Nina Amenta and Yong Joo Kil},
+@article{amenta2004,
+  author =   {Amenta, N. and  Kil, Y. J.},
+  title =  {Defining point-set surfaces},
+  journal =  sigjournal,
+  volume =   {23},
+  number =   {3},
+  year =   {2004},
+  pages =  {264--270},
+  publisher =  sigpub
+}
+
+
+@inproceedings{hoppe1992,
+  author =   {Hugues Hoppe and Tony DeRose and Tom Duchamp and
+                  John McDonald and Werner Stuetzle},
+  title =  {Surface reconstruction from unorganized points},
+  booktitle =  sigtitle,
+  year =   {1992},
+  pages =  {71--78},
+  publisher =  sigpub
+}
+                  
+@inproceedings{pauly2001,
+  author =   "Mark Pauly and Markus Gross",
+  title =  "Spectral Processing of Point-Sampled Geometry",
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  pages =  "379--386",
+  year =   "2001"
+}
+
+@inproceedings{guskov1999,
+  author =   {I. Guskov and W. Sweldens and P. Schr\"oder},
+  title =  {Multiresolution Signal Processing for Meshes},
+  booktitle =    sigtitle,
+  pages =  {325-334},
+  publisher =    sigpub,
+  year =   {1999},
+  url =    {http://cm.bell-labs.com/who/wim/}
+}
+
+@inproceedings{taubin1995,
+  author =   {Gabriel Taubin},
+  title =  {A Signal Processing Approach to Fair Surface Design},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  pages =  {351--358},
+  year =   {1995},
+}
+
+@inproceedings{gortler1996,
+  author =   {S. J. Gortler and R. Grzeszczuk and R. Szeliski and
+                  M. F. Cohen},
+  title =  {The Lumigraph},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {1996},
+}
+
+@inproceedings{schroder1995,
+  author =   {Peter Schr{\"o}der and Wim Sweldens},
+  title =  {Spherical Wavelets: {E}fficiently Representing
+                  Functions on the Sphere},
+  booktitle =    sigtitle,
+  year =   {1995},
+  publisher =    sigpub,
+  pages =  {161-172},
+  url =    {http://cm.bell-labs.com/who/wim/}
+}
+
+@inproceedings{ karni2000,
+  author =   "Zachi Karni and Craig Gotsman",
+  title =  "Spectral Compression of Mesh Geometry",
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  pages =  "279--286",
+  year =   "2000",
+  url =    "citeseer.nj.nec.com/karni00spectral.html"
+}
+
+@inproceedings{zwicker2002,
+  title =  {Pointshop {3D}: An Interactive System for
+                  Point-Based Surface Editing},
+  author =   {M. Zwicker and M. Pauly and O. Knoll and M. Gross},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {2002},
+  pages =  {322-329}
+}
+
+@inproceedings{levy1998,
+  title =  {Non-distorted texture mapping for sheared
+                  triangulated meshes},
+  author =   {B. Levy and J.-L. Mallet},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {1998},
+  pages =  {343-352}
+}
+
+@inproceedings{levy2001,
+  title =  {Constrained texture mapping for polygonal meshes},
+  author =   {B. Levy},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {2001},
+  pages =  {322-329}
+}
+
+@inproceedings{turk1999,
+  title =  {Shape Transformation Using Variational Implicit
+                  Functions},
+  author =   {Greg Turk and James F. O'Brien},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {1999},
+}
+
+@inproceedings{rusinkiewicz2000,
+  author =   {S. Rusinkiewicz and M. Levoy},
+  title =  {Qsplat: A Multiresolution Point Rendering Sstem for
+                  Large Meshes},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {2000},
+  pages =  {343-352}
+}
+
+@inproceedings{pfister2000,
+  author =   {H. Pfister and M. Zwicker},
+  title =  {Surfels: Surface Elements as Rendering Primatives},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {2000},
+  month =  {July},
+  pages =  {335-342}
+}
+
+@inproceedings{museth2002,
+  author =   {Ken Museth and David E. Breen and Ross T. Whitaker
+                  and Alan H. Barr},
+  title =  {Level Set Surface Editing Operators},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {2002},
+  pages =  {330-338}
+}
+
+%  author =  {Nina Amenta and Marshall Bern and Manolis Kamvysselis},
+@inproceedings{amenta1998,
+  author =   {Amenta, N. and Bern, M. W. and Kamvysselis, M.},
+  title =  {A New {V}oronoi-Based Surface Reconstruction
+                  Algorithm},
+  booktitle =  sigtitle,
+  publisher =  sigpub,
+  year =   {1998},
+  pages =  {415--421}
+}
+
+@inproceedings{carr2001,
+  author =   {J. C. Carr and R. K. Beatson and J. B. Cherrie and
+                  T. J. Mitchell and W. R. Fright and B. C. McCallum
+                  and T. R. Evans},
+  title =  {Reconstruction and Representation of 3D Objects with
+                  Radial Basis Functions},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {2001}
+}
+
+@inproceedings{lorensen1987,
+  author =   {William E. Lorensen and Harvey E. Cline},
+  title =  {Marching cubes: A high resolution {3D} surface
+                  construction algorithm},
+  booktitle =    sigtitle,
+  year =   {1987},
+  pages =  {163--169},
+  publisher =  sigpub
+}
+
+%  author =  {Greg Turk},
+@inproceedings{turk1991,
+  author =   {G. Turk},
+  title =  {Generating Textures on Arbitrary Surfaces Using
+                  Reaction-Diffusion},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {1991},
+  pages =  {289-298}
+}
+
+@inproceedings{turk1992,
+  author =   {Greg Turk},
+  title =  {Re-Tiling Polygonal Surfaces},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {1992},
+  pages =  {55-64}
+}
+
+@inproceedings{lee1998,
+  author =   {Aaron W. F. Lee and Wim Sweldens and Peter
+                  Schr{\"o}der and Lawrence Cowsar and David Dobkin},
+  title =  {MAPS: Multiresolution Adaptive Parameterization of
+                  Surfaces},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {1998},
+  pages =  {95-104}
+}
+
+@inproceedings{guskov2000,
+  author =   {Igor Guskov and Kiril Vidim\v{c}e and Wim Sweldens
+                  and Peter Schr\"oder},
+  title =  {Normal Meshes},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {2000},
+  pages =  {95-102}
+}
+
+@inproceedings{desbrun1999,
+  author =   "Mathieu Desbrun and Mark Meyer and Peter
+                  Schr{\"o}der and Alan H. Barr",
+  title =  "Implicit fairing of irregular meshes using diffusion
+                  and curvature flow",
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {1999},
+  pages =  {317--324}
+}
+
+@inproceedings{gotsman2003,
+  author =   {Craig Gotsman and Xianfeng Gu and Alla Sheffer},
+  title =  {Fundamentals of Spherical Parameterization for 3D
+                  Meshes},
+  booktitle =    sigtitle,
+  publisher =    sigpub,
+  year =   {2003},
+  pages =  {358--363}
+}
+
+@inproceedings{kobbelt1998,
+  author =   {Leif Kobbelt and Swen Campagna and Jens Vorsatz and
+                  Hans-Peter Seidel},
+  title =  {Interactive multi-resolution modeling on arbitrary
+                  meshes},
+  booktitle =    sigtitle,
+  year =   {1998},
+  isbn =   {0-89791-999-8},
+  pages =  {105--114},
+  doi =    {http://doi.acm.org/10.1145/280814.280831},
+  publisher =    sigpub,
+}
+
+@inproceedings{cohensteiner2004,
+  author =   {David Cohen-Steiner and Pierre Alliez and Mathieu
+                  Desbrun},
+  title =  {Variational shape approximation},
+  booktitle =    sigtitle,
+  year =   {2004},
+  pages =  {905--914},
+  doi =    {http://doi.acm.org/10.1145/1015706.1015817},
+  publisher =    sigpub,
+}
+
+%  author =  "Michael Garland and Paul S. Heckbert",
+@inproceedings{garland1997,
+  author =   {M. Garland and P. S. Heckbert},
+  title =  {Surface Simplification Using Quadric Error Metrics},
+  booktitle =  sigtitle,
+  pages =  {209--216},
+  year =   {1997}
+}
+
+@inproceedings{schroeder1992,
+  author =   {William J. Schroeder and Jonathan A. Zarge and
+                  William E. Lorensen},
+  title =  {Decimation of triangle meshes},
+  booktitle =    sigtitle,
+  year =   {1992},
+  pages =  {65--70},
+  publisher =    sigpub,
+}
+                  
+                  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                  
+@inproceedings{gerig2001,
+  author =   {G. Gerig and M. Styner and D. Jones and D Weinberger
+                  and J. Lieberman},
+  title =  {Shape analysis of brain ventricles using {SPHARM}},
+  booktitle =  {Proc. Workshop on Mathematical Methods in Biomedical
+                  Image Analysis},
+  publisher =  {{IEEE} Computer Society},
+  year =   {2001},
+  pages =  {171--178},
+  url =    {http://www.cs.unc.edu/~gerig/}
+}
+
+@inproceedings{gartner1999,
+  author =   {Bernd G{\"a}rtner},
+  title =  {Fast and Robust Smallest Enclosing Balls},
+  booktitle =  {Proc. 7th Annual European Symposium on Algorithms
+                  (ESA)},
+  publisher =  {Springer-Verlag},
+  year =   1999
+}
+
+@article{freeman1975,
+  author =   {H. Freeman and R. Shapira},
+  title =  {Determining the Minimum-Area Encasing Rectangle for
+                  an Arbitrary Closed Curve},
+  journal =  {Communications of the ACM},
+  volume =   18,
+  number =   7,
+  year =   1975
+}
+
+@incollection {schroder1995b,
+  author =   {P. Schr\"oder and W. Sweldens},
+  title =  {Spherical wavelets: {T}exture processing},
+  booktitle =  {Rendering Techniques '95},
+  editor =   {P. Hanrahan and W. Purgathofer},
+  publisher =  {Springer Verlag},
+  address =  {Wien, New York},
+  month =  {August},
+  year =   1995,
+  pages =  {252--263},
+  url =    {http://cm.bell-labs.com/who/wim/}
+}
+
+@inproceedings{gerig2002,
+  author =   {Guido Gerig and Martin Styner},
+  title =  {Models for Segmentation and Structural Analysis},
+  booktitle =  {International Symposium on Biomedical Imaging},
+  publisher =  {IEEE},
+  year =   {2002},
+  url =    {http://www.cs.unc.edu/~gerig/}
+}
+
+@TechReport{healy1996,
+  author =   {Dennis M. Healy and Daniel N. Rockmore and Sean
+                  S. B. Moore},
+  title =  {{FFTs for the 2-Sphere -- Improvements and
+                  Variations}},
+  institution =  {Dartmouth College, Computer Science},
+  address =  {Hanover, NH},
+  number =   {PCS-TR96-292},
+  year =   {1996},
+  month =  {June},
+}
+
+@misc{garland_qslim,
+  author =       {M. Garland},
+  title =        {The {QS}lim Mesh Simplification Software},
+  text =         {\webLink{http://graphics.cs.uiuc.edu/~garland/software/qslim.html}},
+  year =         {1998}
+}
+
+@misc{aldroubi2000,
+  author =   "A. Aldroubi and K. Grochenig",
+  title =  "Non-uniform sampling in shift invariant spaces",
+  text =   "A. Aldroubi and K. Grochenig. Non-uniform sampling
+                  in shift invariant spaces. Preprint, 2000.",
+  year =   "2000"
+}
+
+@article{brechbuhler1995,
+  author =   {C. Brechb{\"u}hler and G. Gerig and O. K{\"u}bler},
+  title =  {Parametrization of closed surfaces for 3-D shape
+                  description},
+  journal =  {Computer Vision and Image Understanding},
+  volume =   61,
+  number =   2,
+  pp =     {154-170},
+  year =   1995
+}
+
+@inproceedings{ohtake2000,
+  author =   {Y. Ohtake and A. G. Belyaev and I. A. Bogaevski},
+  title =  {Polyhedral Surface Smoothing with Simultaneous Mesh
+                  Regularization},
+  booktitle =  {Geometric Modeling and Processing Conference
+                  Proceedings},
+  publisher =  {IEEE Computer Society},
+  year =   2000
+}
+
+@inproceedings{karni2001,
+  title =  "3D Mesh Compression Using Fixed Spectral Bases",
+  author =   "Zachi Karni and Craig Gotsman",
+  booktitle =  {Graphics Interface},
+  year =   "2001",
+  month =  "June",
+  pages =  "1--8"
+}
+
+@article{hall1970,
+  title =  {An r-dimensional Quadratic Placement Algorithm},
+  author =   {K. M. Hall},
+  journal =  {Management Science},
+  volume =   17,
+  pages =  {219--229},
+  year =   1970
+}
+
+@book{edelsbrunner2001,
+  title = {Geometry and Topology for Mesh Generation},
+  author = {H. Edelsbrunner},
+  publisher = {Cambridge},
+  year = 2001
+}
+
+@book{freeden1998,
+  title =  {Constructive Approximation on the Sphere with
+                  Applications to Geomathematics},
+  author =   {W. Freeden and T. Gervens and M. Schreiner},
+  publisher =  {Oxford University Press},
+  address =  {Great Clarendon Street, Oxford},
+  year =   1998,
+  dewey =  {QA 406 F74 1997}
+}
+
+%  author =  {Manfredo P. do Carmo},
+@book{docarmo1976,
+  author =   {M. P. do Carmo},
+  title =  {Differential Geometry of Curves and Surfaces},
+  publisher =  {Prentice-Hall},
+  year =   {1976}
+}
+%   address =  {Englewood Cliffs, New Jersey},
+
+@book{osher2003,
+  author =   {Stanley Osher and Ronald Fedkiw},
+  title =  {Level Set Methods and Dynamic Implicit Surfaces},
+  publisher =  {Springer-Verlag},
+  address =  {New York},
+  year =   {2003},
+  series =   {Applied Mathematical Sciences},
+  volume =   {153}
+}
+
+
+@inproceedings{tam2002,
+  author =   "Roger C. Tam and Wolfgang Heidrich",
+  title =  "Feature-Preserving Medial Axis Noise Removal",
+  booktitle =  "{ECCV} (2)",
+  pages =  "672--686",
+  year =   "2002",
+  url =    "http://www.cs.ubc.ca/spider/rtam/"
+}
+
+@incollection{duchon1977,
+  title =  {Splines Minimizing Rotation-Invariant Semi-Norms in
+                  Sobolev Spaces},
+  author =   {Jean Duchon},
+  booktitle =  {Constructive Theory of Functions of Several
+                  Variables},
+  series =   {Lecture Notes in Mathematics},
+  editor =   {A. Dolb and B. Eckmann},
+  publisher =  {Springer-Verlag},
+  year =   {1977},
+  pages =  {85--100}
+}
+
+%\href{http://www.cs.brown.edu/research/vis/lists/pdf/Herman:92:SIN.pdf}
+%\href{http://www.cs.brown.edu/research/vis/lists/bibtex/Herman:92:SIN.bibtex}
+@article{herman1992,
+  author =   "G. T. Herman and J. Zheng and C. A. Bucholts ",
+  journal =  "IEEE Computer Graphics and Applications ",
+  month =  "March ",
+  number =   "3 ",
+  pages =  "69--79 ",
+  title =  "Shape-Based Interpolation",
+  volume =   "12 ",
+  year =   "1992 "
+}
+
+@article{chang2003,
+  author =   {Ku-Yaw Chang and I-Ning Chang and Lih-Shyang Chen
+                  and Chungnan Lee},
+  title =  {Multi-tuple Interpolation Using Fourier Descriptors},
+  journal =  {Visual Computer},
+  volume =   {19},
+  number =   {1},
+  pages =  {1--9},
+  year =   {2003}
+}
+
+
+@article{zahn1972,
+  author =   {Charles T. Zahn and Ralph Z. Roskies},
+  title =  {Fourier Descriptors for Plane Closed Curves},
+  journal =  {IEEE Transactions on Computers},
+  volume =   {C-21},
+  number =   {3},
+  pages =  {269--281},
+  month =  {March},
+  year =   {1972}
+}
+
+@article{peng1999,
+  author =   {Danping Peng and Barry Merriman and Stanley Osher
+                  and Hongkai Zhao and Myungjoo Kang},
+  title =  {A PDE-Based Fast Local Level Set Method},
+  journal =  {Journal of Computational Physics},
+  volume =   155,
+  pages =  {410--438},
+  year =   {1999}
+}
+
+@inproceedings{zhao2001,
+  author =   {Hong-Kai Zhao and Stanley Osher and Ronald Fedkiw},
+  title =  {Fast Surface Reconstruction Using the Level Set
+                  Method},
+  booktitle =  {1st IEEE Workshop on Variational and Level Set
+                  Methods},
+  organization = {8th ICCV},
+  address =  {Vancouver},
+  pages =  {194--202},
+  year =   {2001}
+}
+
+@article{zhao2000,
+  author =   {Hong-Kai Zhao and Stanley Osher and Barry Merriman
+                  and Myungjoo Kang},
+  title =  {Implicit and Non-parametric Shape Reconstruction
+                  from Unorganized Data Using a Variational Level Set
+                  Method},
+  journal =  {Computer Vision and Image Understanding},
+  volume =   {80},
+  pages =  {295--314},
+  year =   {2000}
+}
+
+@article{zhao1996,
+  author =   {Hong-Kai Zhao and T. Chan and Barry Merriman Stanley
+                  Osher},
+  title =  {A Variational Level Set Approach to Multiphase
+                  Motion},
+
+  journal =  {Journal of Computational Physics},
+  volume =   {127},
+  pages =  {179--195},
+  year =   {1996}
+}
+
+@article{chan2001,
+  author =   {Tony F. Chan and Luminita A. Vese},
+  title =  {Active Contours Without Edges},
+  journal =  {IEEE Transactions on Image Processing},
+  volume =   {10},
+  number =   {2},
+  month =  {February},
+  year =   {2001}
+}
+
+@article{rouy1992,
+  author =   {Elisabeth Rouy and Agnes Tourin},
+  title =  {A Viscosity Solutions Approach to
+                  Shape-From-Shading},
+  journal =  {SIAM Journal on Numerical Analysis},
+  volume =   {29},
+  number =   {3},
+  month =  {June},
+  year =   {1992}
+}
+
+@article{sussman1994,
+  author =   {Mark Sussman and Peter Smereka and Stanley Osher},
+  title =  {A Level Set Approach for Computing Solutions to
+                  Incompressible Two-Phase Flow},
+  journal =  {Journal of Computational Physics},
+  volume =   {114},
+  pages =  {146--159},
+  year =   {1994}
+}
+
+@inproceedings{grossman1998,
+  author =   {J.P. Grossman and William J. Dally},
+  title =  {Point Sample Rendering},
+  booktitle =  {Proc. 9th Eurographics Workshop on Rendering},
+  year =   {1998},
+  month =  {June},
+  pages =  {181--192}
+}
+
+%  author =  {Nina Amenta and Sunghee Choi and Ravi Krishna Kolluri},
+@inproceedings{amenta2001,
+  author =   {Amenta, N. and Choi, S. and Ravi Krishna Kolluri,
+                  R. K.},
+  title =  {The Power Crust},
+  booktitle =  {Sixth ACM Symposium on Solid Modeling and
+                  Applications},
+  year =   {2001},
+  pages =  {249--260},
+  url =    {www.cs.utexas.edu/amenta/powercrust}
+}
+
+@book{courantMMP1,
+  author =   {R. Courant and D. Hilbert},
+  title =  {Methods of Mathematical Physics},
+  publisher =  {Wiley Interscience},
+  address =  {New York},
+  year =   {1989},
+  edition =  {first english},
+  volume =   {1},
+  note =   {German Edition Copyright 1937}
+}
+
+@book{courantMMP2,
+  author =   {R. Courant and D. Hilbert},
+  title =  {Methods of Mathematical Physics},
+  publisher =  {Wiley Interscience},
+  address =  {New York},
+  year =   {1989},
+  edition =  {first english},
+  volume =   {2},
+  note =   {German Edition Copyright 1937}
+}
+
+@book{courantMMPboth,
+  author =   {R. Courant and D. Hilbert},
+  title =  {Methods of Mathematical Physics},
+  publisher =  {Wiley Interscience},
+  address =  {New York},
+  year =   {1989},
+  edition =  {first english},
+  volume =   {1 and 2},
+  note =   {German Edition Copyright 1937}
+}
+
+@misc{vtk,
+  author =   {W. Schroeder and K. Martin and W. Lorensen},
+  title =  {The Visualization Toolkit},
+  howpublished = {http://public.kitware.com/VTK/},
+  year =   2003
+}
+
+@book{sokolowski1992,
+  author =   {Jan Sokolowski and Jean-Paul Zolesio},
+  title =  {Introduction to Shape Optimization},
+  subtitle =   {Shape Sensitivity Analysis},
+  publisher =  {Springer-Verlag},
+  year =   {1992},
+  series =   {Springer Series in Computational Mathematics},
+  volume =   {16},
+  dewey =  {QA 612,7 S65 1992 c,1}
+}
+
+
+@book{mueller1998,
+  author =   {Claus M\"uller},
+  title =  {Analysis of Spherical Symmetries in {E}uclidean
+                  Spaces},
+  publisher =  {Springer-Verlag},
+  address =  {New York},
+  year =   {1998},
+  series =   {Applied Mathematical Sciences},
+  volume =   {129},
+  dewey =  {QA 1 A647 v.129 c.1}
+}
+
+@book{oneill1997,
+  author =   {Barrett O'Neill},
+  title =  {Elementary Differential Geometry},
+  publisher =  {Academic Press},
+  address =  {24-28 Oval Road, London NW1 7DX, UK},
+  year =   {1997},
+  edition =  {second},
+}
+
+@book{burden2001,
+  author =   {Richard L. Burden and J. Douglas Faires},
+  title =  {Numerical Analysis},
+  publisher =  {Brooks/Cole},
+  address =  {California, USA},
+  year =   {2001},
+  edition =  {seventh}
+}
+
+@book{berger1971,
+  author =   {Marcel Berger and Paul Gauduchon and Edmond Mazet},
+  title =  {Le Spectre d'une Vari\'et\'e {R}iemannienne},
+  publisher =  {Springer-Verlag},
+  address =  {Berlin},
+  series =   {Lecture Notes in Mathematics},
+  volume =   {194},
+  year =   {1971}
+}
+
+@book{porteous2001,
+  author =   {Ian R. Porteous},
+  title =  {Geometric Differentiation},
+  subtitle =   {For the Intelligence of Curves and Surfaces},
+  publisher =  {Cambridge University Press},
+  edition =  {second},
+  year =   {2001},
+  note =   {First edition published 1994}
+}
+
+% http://www-sfb288.math.tu-berlin.de/~konrad/Books/Vismath02/index.html
+%  author =  {Mark Meyer and Mathieu Desbrun and Peter
+%                  Schr{\"o}der and Alan H. Barr},
+@incollection{meyer2003,
+  title =  {Discrete Differential-Geometry Operators for
+                  Triangulated 2-Manifolds},
+  author =   {M. Meyer and M. Desbrun and P.  Schr{\"o}der and
+                  A. H. Barr},
+  booktitle =  {{V}isualization and {M}athematics {III}},
+  editor =   {Hans-Christian Hege and Konrad Polthier},
+  publisher =  {Springer-Verlag},
+  address =  {Heidelberg},
+  year =   {2003},
+  pages =  {35--57}
+}
+
+%  author =  {Michael S. Floater},
+@article{floater1997,
+  author =   {M. S. Floater},
+  title =  {Parametrization and smooth approximation of surface
+                  triangulations},
+  journal =  {Computer Aided Geometric Design},
+  volume =   {14},
+  year =   {1997},
+  pages =  {231--250}
+}
+
+@book{rosenberg1997,
+  author =   {Steven Rosenberg},
+  title =  {The {L}aplacian on a {R}iemannian Manifold},
+  subtitle =   {An Introduction to Analysis on Manifolds},
+  publisher =  {Cambridge University Press},
+  year =   {1997}
+}
+
+@book{boyce1986,
+  author =   {William E. Boyce and Richard C. DiPrima},
+  title =  {Elementary Differential Equations and Boundary Value
+                  Problems},
+  publisher =  {John Wiley and Sons},
+  edition =  {fourth},
+  year =   {1986}
+}
+
+@mastersthesis{stark2002,
+  author =   {Paul Stark},
+  title =  {Fourier Volume Rendering of Irregular Data Sets},
+  school =   {Simon Fraser University},
+  address =  {Burnaby, BC, Canada},
+  year =   {2002}
+}
+
+@book{bagchi1999,
+  author =   {Sonali Bagchi and Sanjit K. Mitra},
+  title =  {The Nonuniform Discrete Fourier Transform and its
+                  Applications in Signal Processing},
+  publisher =  {Kluwer Academic Publishers},
+  year =   {1999}
+}
+
+@book{craioveanu2001,
+  author =   {Mircea Craioveanu and Mircea Puta and Themistocles
+                  M. Rassias},
+  title =  {Old and New Aspects in Spectral Geometry},
+  publisher =  {Kluwer Academic Publishers},
+  year =   {2001}
+}
+
+% REPLACE WITH: zhang2004
+%unpublished{zhang2003,
+%  author =  {Hao Zhang and Eugene Fiume},
+%  title =   {{L}aplacian Operators for Spectral Mesh Processing},
+%  year =  {2003},
+%  note =  {preprint}
+%}
+
+@book{singer1967,
+  author =   {I. M. Singer and J. A. Thorpe},
+  title =  {Lecture Notes on Elementary Topology and Geometry},
+  publisher =  {Springer-Verlag},
+  year =   {1967}
+}
+
+@book{clark1982,
+  author =   {Colin W. Clark},
+  title =  {Elementary Mathematical Analysis},
+  publisher =  {Wadsworth},
+  year =   {1982},
+  edition =  {second}
+}
+
+@book{clark1984,
+  author =   {A. Clark},
+  title =  {Elements of Abstract Algebra},
+  publisher =  {Dover},
+  year =   {1984},
+  address =  {New York}
+}
+
+@book{DierkesMS1,
+  author =   {Ulrich Dierkes and Stefan Hildebrandt and Albrecht
+                  K\"{u}ster and Ortwin Wohlrab},
+  title =  {Minimal Surfaces I},
+  subtitle =   {Boundary Value Problems},
+  publisher =  {Springer-Verlag},
+  address =  {Heidelberg},
+  year =   {1992},
+  series =   {Grundlehren der mathematischen Wissenschaften},
+  volume =   {295}
+}
+
+@book{edwardsFS1,
+  author =   {R. E. Edwards},
+  title =  {Fourier Series I},
+  subtitle =   {A Modern Introduction},
+  publisher =  {Springer-Verlag},
+  address =  {New York},
+  year =   {1976},
+  edition =  {second},
+  series =   {Graduate Texts in Mathematics},
+  volume =   {64}
+}
+
+@incollection{mohar1991,
+  title =  {The {L}aplacian Spectrum of Graphs},
+  author =   {Bojan Mohar},
+  booktitle =  {Graph Theory, Combinatorics, and Applications},
+  editor =   {Y. Alavi and G. Chartrand and O. R. Ollermann and
+                  A. J. Schwenk},
+  volume =   {2},
+  year =   {1991},
+  pages =  {871--898},
+  publisher =  {Wiley}
+}
+
+@article{wallace1980,
+  author =   {Timothy P. Wallace and Paul A. Wintz},
+  title =  {An Efficient Three-Dimensional Aircraft Recognition
+                  Algorithm Using Normalized Fourier Descriptors},
+  journal =  {Computer Graphics and Image Processing},
+  volume =   {13},
+  year =   {1980},
+  pages =  {99--126}
+}
+
+%  author =  {Mark de Berg and Marc van Kreveld and Mark Overmars
+%                  and Otfried Schwarzkopf},
+@book{deberg1998,
+  title =  {{Computational Geometry. Algorithms and Applications}},
+  author =   {M. de Berg and M. van Kreveld and M. Overmars
+                  and O. Schwarzkopf},
+  publisher =  {Springer-Verlag},
+  year =   {1998}
+}
+%  address =   {Berlin, Heidelberg, New York},
+
+@inproceedings{polthier2002,
+  author =   {Konrad Polthier},
+  title =  { Computational Aspects of Discrete Minimal Surfaces},
+  booktitle =  {Proc. of the Clay Summer School on Global Theory of
+                  Minimal Surfaces},
+  editor =   {J. Hass and D. Hoffman and A. Jaffe and H. Rosenberg
+                  and R. Schoen and M. Wolf},
+  year =   {to appear 2002}
+}
+
+%  author =  {David Cohen-Steiner and Jean-Marie Morvan},
+@inproceedings{cohensteiner2003,
+  author =   {D. Cohen-Steiner and J.-M. Morvan},
+  title =  {Restricted {D}elaunay triangulations and normal cycle},
+  booktitle =  socgtitle,
+  publisher =  {ACM},
+  year =   {2003}
+}
+
+@unpublished{benchen2003,
+  author =   {Mirela Ben-Chen and Craig Gotsman},
+  title =  {On the Optimality of Spectral Compression of Meshes},
+  year =   {2003},
+  note =   {preprint}
+}
+
+@article{floater2003,
+  author =   {Michael S. Floater},
+  title =  {Mean value coordinates},
+  journal =  {Comput. Aided Geom. Des.},
+  volume =   {20},
+  number =   {1},
+  year =   {2003},
+  issn =   {0167-8396},
+  pages =  {19--27},
+  doi =    {http://dx.doi.org/10.1016/S0167-8396(02)00002-5},
+  publisher =  {Elsevier Science Publishers B. V.},
+}
+
+%  author =  {Mathieu Desbrun and Mark Meyer and Pierre Alliez},
+@inproceedings{desbrun2002,
+  author =   {M. Desbrun and M. Meyer and P. Alliez},
+  title =  {Intrinsic Parameterizations of Surface Meshes},
+  booktitle =  {Proceedings of Eurographics},
+  pages =  {209--218},
+  year =   {2002}
+}
+
+%  author =  {Emil Praun and Wim Sweldens and Peter
+%                  Schr\"oder},
+@inproceedings{praun2001,
+  author =   {E. Praun and W. Sweldens and P.  Schr\"oder},
+  title =  {Consistent mesh parameterizations},
+  booktitle =  sigtitle,
+  year =   {2001},
+  pages =  {179--184}
+}
+
+@inproceedings{gotsman2003spec,
+  author =   {Craig Gotsman},
+  title =  {On Graph Partitioning, Spectral Analysis, and
+                  Digital Mesh Processing},
+  booktitle =  {Proceedings of the Shape Modeling International
+                  2003},
+  year =   {2003},
+  isbn =   {0-7695-1909-1},
+  pages =  {165--171},
+  publisher =  {IEEE Computer Society},
+}
+
+@article{meyer2002,
+  author =   {Mark Meyer and Haeyoung Lee and Alan Barr and
+                  Mathieu Desbrun},
+  title =  {Generalized Barycentric Coordinates on Irregular
+                  Polygons},
+  journal =  {Journal of Graphics Tools},
+  volume =   {7},
+  number =   {1},
+  year =   {2002},
+  pages =  {13--22},
+}
+
+@article{fujiwara1995,
+  author =   {Koji Fujiwara},
+  title =  {Eigenvalues of {L}aplacians on a Closed {R}iemannian
+                  Manifold and its Nets},
+  journal =  {Proceedings of the AMS},
+  volume =   {123},
+  number =   {8},
+  year =   {1995},
+  pages =  {2585--2594},
+}
+
+@inproceedings{sorkine2003,
+  author =   {Olga Sorkine and Daniel Cohen-Or and Sivan Toledo},
+  title =  {High-Pass Quantization for Mesh Encoding},
+  booktitle =  sgptitle,
+  year =   {2003},
+  pages =  {41--51},
+}
+
+@inproceedings{taubin2001,
+  author =   {Gabriel Taubin},
+  title =  {Dual Mesh Resampling},
+  booktitle =  {Proceedings of the 9th Pacific Conference on
+                  Computer Graphics and Applications},
+  year =   {2001},
+  isbn =   {0-7695-1227-5},
+  pages =  {180},
+  publisher =  {IEEE Computer Society},
+}
+
+@article{gu2002,
+  author =   {Xianfeng Gu and Shing-Tung Yau},
+  title =  {Computing Conformal Structures on Surfaces},
+  journal =  {Communications in Information and Systems},
+  volume =   {2},
+  number =   {2},
+  pages =  {121--146},
+  year =   {2002},
+  publisher =  {International Press},
+}
+
+@incollection{kobbelt1997,
+  author =   {Leif Kobbelt},
+  title =  {Discrete fairing},
+  booktitle =  {The Mathematics of Surfaces VII},
+  publisher =  {Information Geometers},
+  year =   {1997},
+  pages =  {101--129},
+  isbn =   {1-874728-12-7},
+}
+
+@inproceedings{xu2004,
+  author =   {Guoliang Xu},
+  title =  {Convergent Discrete {L}aplace-{B}eltrami Operators over
+                  Triangular Surfaces},
+  booktitle =  {Geometric Modeling and Processing},
+  publisher =  {IEEE Computer Society},
+  year =   {2004},
+  pages =  {195--204},
+  isbn =   {0-7695-2078-2},
+  bibsource =  {DBLP, http://dblp.uni-trier.de}
+}
+
+@misc{tnt,
+  author =   {Roland Pozo},
+  title =  {{TNT}: Template Numerical Toolkit},
+  howpublished = {http: //math.nist.gov/tnt/},
+  year =   {2003}
+}
+
+@misc{arpack++,
+  author =   {Francisco M. Gomes and Danny C. Sorensen},
+  title =  {{ARPACK++}},
+  howpublished = {http://www.ime.unicamp.br/\verb!~!chico/arpack++/},
+  year =   {1997}
+}
+
+
+@incollection {bengio2004,
+  author =   " Yoshua Bengio and {Jean-Fran\c{c}ois} Paiement and
+                  Pascal Vincent and Olivier Delalleau and Nicolas {Le
+                  Roux} and Marie Ouimet",
+  title =  " Out-of-Sample Extensions for {LLE}, Isomap, {MDS},
+                  Eigenmaps, and Spectral Clustering",
+  booktitle =  "Advances in Neural Information Processing Systems
+                  16",
+  editor =   "Sebastian Thrun and Lawrence Saul and Bernhard
+                  {Sch\"{o}lkopf}",
+  publisher =  "MIT Press",
+  address =  "Cambridge, MA",
+  year =   "2004",
+  keywords =   "eigenfunctions learning, dimensionality reduction,
+                  spectral methods, kernel PCA, Nystrom formula,
+                  locally linear embedding, Isomap",
+}
+
+@inproceedings{ohbuchi2001,
+  author =   {Ryutarou Ohbuchi and Shigeo Takahashi and Takahiko
+                  Miyazawa and Akio Mukaiyama},
+  title =  {Watermarking 3D polygonal meshes in the mesh
+                  spectral domain},
+  booktitle =  {Graphics Interface},
+  year =   {2001},
+  isbn =   {0-9688808-0-0},
+  pages =  {9--17},
+  location =   {Ottawa, Ontario, Canada},
+  publisher =  {Canadian Information Processing Society},
+}
+
+@book{strang1973,
+  author =   {Gilbert Strang and George J. Fix},
+  title =  {An Analysis of the Finite Element Method},
+  publisher =  {Prentice-Hall},
+  year =   {1973}
+}
+
+
+%%%%%%% from Richard %%%%%%%%%%
+
+@article{shapiro1992,
+  author =   {Larry S. Shapiro and J. Michael Brady},
+  title =  {Feature-based correspondence: an eigenvector
+                  approach},
+  journal =  {Image Vision Computing},
+  volume =   {10},
+  number =   {5},
+  year =   {1992},
+  pages =  {283--288},
+  publisher =  {Butterworth-Heinemann},
+}
+
+@inproceedings{carcassoni2000,
+  author =   {Marco Carcassoni and Edwin R. Hancock},
+  title =  {Point Pattern Matching with Robust Spectral
+                  Correspondence},
+  booktitle =  {Proceedings of Computer Vision and Pattern
+                  Recognition},
+  pages =  {649--655},
+  year =   {2000},
+  publisher =  {IEEE Computer Society}
+}
+
+@inproceedings{carcassoni2003,
+  author =   {Marco Carcassoni and Edwin R. Hancock},
+  title =  {Alignment using Spectral Clusters},
+  booktitle =  {British Machine Vision Conference},
+  year =   {2002},
+}
+
+@book{chung1997,
+  author =   {Fan R. K. Chung},
+  title =  {Spectral Graph Theory},
+  publisher =  {American Mathematical Society},
+  year =   {1997},
+  note =   {CBMS Regional Conference Series in Mathematics}
+}
+
+@inproceedings{taubin1996,
+  author =   {Gabriel Taubin and Tong Zhang and Gene H. Golub},
+  title =  {Optimal Surface Smoothing as Filter Design},
+  booktitle =  {Proceedings of the 4th European Conference on
+                  Computer Vision},
+  volume =   {1},
+  year =   {1996},
+  pages =  {283--292},
+  publisher =  {Springer-Verlag},
+}
+
+@inproceedings{zhang2003butter,
+  author =   {Hao Zhang and Eugene Fiume},
+  title =  {Butterworth Filtering and Implicit Fairing of
+                  Irregular Meshes},
+  booktitle =  {Proceedings of the 11th Pacific Conference on
+                  Computer Graphics and Applications},
+  year =   {2003},
+  pages =  {502--506},
+  publisher =  {IEEE Computer Society},
+}
+
+@inproceedings{zhang2004,
+  author =   {Hao Zhang},
+  title =  {Discrete Combinatorial {L}aplacian Operators for
+                  Digital Geometry Processing},
+  booktitle =  {Proceedings of SIAM Conference on Geometric Design
+                  and Computing},
+  publisher =  {Nashboro Press},
+  year =   {2004},
+  note =   {to appear}
+}
+
+%%%%%%%%%%%%%%%% end Richard bib
+
+@techreport{maltret2002,
+  author =   {J.-L. Maltret and M. Daniel},
+  title =  {Discrete curvatures and applications : a survey},
+  type =   {Rapport de recherche},
+  institution =  {Laboratoire des Sciences de l'Information et des
+                  Syst\`emes},
+  number =   {004.2002},
+  year =   {2002},
+  equipe =   {LXAO}
+}
+
+
+@techreport{gross2000,
+  author =   {M. Gross and A. Hubeli},
+  title =  {Eigenmeshes},
+  type =   {Technical Report},
+  institution =  {CS department, ETH Z\"urich},
+  number =   {338},
+  year =   {2000}
+}
+
+@inproceedings{weiss1999,
+  author =   {Yair Weiss},
+  title =  {Segmentation Using Eigenvectors: A Unifying View},
+  booktitle =  {ICCV '99: Proceedings of the International
+                  Conference on Computer Vision-Volume 2},
+  year =   {1999},
+  isbn =   {0-7695-0164-8},
+  pages =  {975},
+  publisher =  {IEEE Computer Society},
+  address =  {Washington, DC, USA},
+}
+
+%%%%%%%%%%%%%%%%%%%%%% triangulation stuff
+
+%  author =  {Nira Dyn and Kai Hormann and Sun-Jeong Kim and David
+%                  Levin},
+@incollection{dyn2001,
+  author =   {N. Dyn and K. Hormann and S.-J. Kim and D. Levin},
+  title =  {Optimizing 3{D} triangulations using discrete
+                  curvature analysis},
+  booktitle =  {Mathematical Methods for Curves and Surfaces},
+  year =   {2001},
+  pages =  {135--146},
+  publisher =  {Vanderbilt University}
+}
+
+@book{aleksandrov1967,
+  author =   {A. D. Aleksandrov and V. A. Zalgaller},
+  title =  {Intrinsic Geometry of Surfaces},
+  publisher =  {AMS},
+  series =   {Transactions of Mathematical Monographs},
+  volume =   {15},
+  year =   {1967}
+}
+
+%  author =  "Nina Amenta and Marshall W. Bern",                  
+% DEPRECATED (conference version)                  
+@inproceedings{amenta1998vfsocg,
+  author =   {Amenta, N. and Bern, M. W.},
+  title =  {Surface Reconstruction by {V}oronoi Filtering},
+  booktitle =  scgtitle,
+  pages =  {39--48},
+  year =   {1998},
+  url =    "citeseer.ist.psu.edu/amenta98surface.html"
+}
+
+% journal version
+@article{amenta1999vf,
+  title={Surface reconstruction by {V}oronoi filtering},
+  author={Amenta, N. and Bern, M.},
+  journal={Discrete and Computational Geometry},
+  volume={22},
+  number={4},
+  pages={481--504},
+  year={1999},
+  publisher={Springer}
+}
+
+
+@article{rippa1990,
+  author =   {S. Rippa},
+  title =  {Minimal roughness property of the {D}elaunay
+                  triangulation},
+  journal =  {Comput. Aided Geom. Des.},
+  volume =   {7},
+  number =   {6},
+  year =   {1990},
+  issn =   {0167-8396},
+  pages =  {489--497},
+  doi =    {http://dx.doi.org/10.1016/0167-8396(90)90011-F},
+  publisher =  {Elsevier Science Publishers B. V.},
+  address =  {Amsterdam, The Netherlands, The Netherlands},
+}
+
+@incollection{vandamme1995,
+  author =   {R. van Damme and L. Alboul},
+  title =  {Tight Triangulations},
+  booktitle =  {Mathematical Methods for Curves and Surfaces},
+  publisher =  {Vanderbilt University Press},
+  pages =  {517--526},
+  year =   {1995}
+}
+
+@unpublished{saucan2004,
+  author =   {Emil Saucan},
+  title =  {Surface Triangulation -- The Metric Approach},
+  year =   {2004},
+  note =   {arXiv:cs.GR/0401023 v1}
+}
+
+
+% 3 times same paper:
+%  author =  {Alexander I. Bobenko and Boris A. Springborn},
+@article{bobenko2007,
+  author =   {A. I. Bobenko and B. A. Springborn},
+  title =  {A discrete {L}aplace-{B}eltrami operator for
+                  simplicial surfaces},
+  journal =  {Discrete and Computational Geometry},
+  volume =   {38},
+  number =   {4},
+  pages =  {740--756},
+  year =   {2007}
+}
+
+
+@unpublished{bobenko2006,
+  author =   {A. I. Bobenko and B. A. Springborn},
+  title =  {A discrete {L}aplace-{B}eltrami operator for simplicial
+                  surfaces},
+  year =   {2006},
+  note =   {arXiv:math.DG/0503219 v3}
+}
+
+@unpublished{bobenko2005,
+  author =   {A. I. Bobenko and B. A. Springborn},
+  title =  {A discrete {L}aplace-{B}eltrami operator for simplicial
+                  surfaces},
+  year =   {2005},
+  note =   {arXiv:math.DG/0503219 v1}
+}
+%%%%%%%%% 
+
+@article{sibson1978,
+  author =   {R. Sibson},
+  title =  {Locally equiangular triangulations},
+  journal =  {Computer Journal},
+  volume =   {21},
+  year =   {1978},
+  pages =  {243--245}
+}
+
+%  author =  {Nira Dyn and David Levin and Samuel Rippa},
+@article{dyn1990,
+  author =   {N. Dyn and D. Levin and S. Rippa},
+  title =  {Data Dependent Triangulations for Piecewise Linear
+                  Interpolation},
+  journal =  {IMA Journal of Numerical Analysis},
+  volume =   {10},
+  pages =  {137--154},
+  year =   {1990}
+}
+
+%  author =  {Igor Rivin},
+@article{rivin1994,
+  author =   {I. Rivin},
+  title =  {{E}uclidean Structures on Simplicial Surfaces and
+                  Hyperbolic Volume},
+  journal =  {Annals of Mathematics},
+  volume =   {139},
+  pages =  {553--580},
+  year =   {1990}
+}
+
+@inproceedings{chen1997,
+  author =   {H. Chen and J. Bishop},
+  title =  {{D}elaunay Triangulation for Curved Surfaces},
+  booktitle =  mrttitle,
+  pages =  {115--127},
+  year =   {1997}
+}
+
+%%%%%%%%%%%%% End Triangulation stuff -- it never ends ...
+
+%  author =  {Ulrich Pinkall and Konrad Polthier},
+@article{pinkall1993,
+  author =   {U. Pinkall and K. Polthier},
+  title =  {Computing Discrete Minimal Surfaces and Their
+                  Conjugates},
+  journal =  {Experimental Mathematics},
+  volume =   {2},
+  pages =  {15--36},
+  year =   {1993}
+}
+
+%  author =  {Klaus Hildebrandt and Konrad Polthier and Max
+%                  Wardetzky},
+@article{hildebrandt2006,
+  author =   {K. Hildebrandt and K. Polthier and M.  Wardetzky},
+  title =  {On the Convergence of Metric and Geometric
+                  Properties of Polyhedral Surfaces},
+  journal =  {Geometriae Dedicata},
+  volume =   {123},
+  number =   {1},
+  pages =  {89--112},
+  year =   {2006}
+}
+
+% was unpublished amenta2002                  
+%  author =  {Nina Amenta and Thomas J. Peters and Er Russell}, 
+@article{amenta2003,
+  author =   {Amenta, N. and Peters, T. J. and Russell, A. C.},
+  title =  {Computational topology: ambient isotopic
+                  approximation of 2-manifolds},
+  journal =  {Theoretical Computer Science},
+  year =   {2003},
+  volume =   {305},
+  pages =  {3--15}
+}
+                
+@inproceedings{clarkson2006,
+  author =   {K. L. Clarkson},
+  title =  {Building Triangulations Using epsilon-Nets},
+  booktitle =  stoctitle,
+  publisher =  {ACM Press},
+  year =   {2006},
+  url =          {http://cm.bell-labs.com/who/clarkson/enet_tris/p.pdf}
+}
+
+
+@inproceedings{amenta1997,
+  author =   {Amenta and Bern and Eppstein},
+  title =  "Optimal Point Placement for Mesh Smoothing",
+  booktitle =  sodatitle,
+  year =   "1997"
+}
+
+@article{amenta1999,
+  author =   {Nina Amenta and Marshall Bern and David Eppstein},
+  title =  {Optimal point placement for mesh smoothing},
+  journal =  {J. Algorithms},
+  volume =   {30},
+  number =   {2},
+  year =   {1999},
+  pages =  {302--322}
+}
+
+%  author =  {Kensuke Onishi and {Jin-ichi} Itoh},
+@inproceedings{onishi2003,
+  author =   {K. Onishi and J. Itoh},
+  title =  {Estimation of the necessary number of points in
+                  {R}iemannian {V}oronoi diagram},
+  booktitle =  {Proc. 15th Canad. Conf. Comput. Geom.},
+  site =   {Halifax},
+  year =   {2003},
+  pages =  {19--24}
+}
+
+%  author =  {Greg Leibon and David Letscher},
+@inproceedings{leibon2000,
+  author =   {G. Leibon and D. Letscher},
+  title =  {{D}elaunay Triangulations and {V}oronoi Diagrams for
+                  {R}iemannian Manifolds},
+  booktitle =  scgtitle,
+  year =   {2000},
+  pages =  {341--349}
+}
+
+
+@phdthesis{shewchuk1997,
+  author =   {J. R. Shewchuk},
+  title =  {{D}elaunay Refinement Mesh Generation},
+  school =   {School of Computer Science, Carnegie Mellon
+                  University},
+  year =   {1997},
+  note =   {Technical Report CMU-CS-97-137}
+}
+
+%  author = {L. Paul Chew},
+@article{chew1989,
+  author = {L. P. Chew},
+  title = {Constrained {D}elaunay Triangulations},
+  journal = {Algorithmica},
+  volume = 4,
+  number = 1,
+  pages = {97--108},
+  year = 1989
+}
+
+@inproceedings{chew1993,
+  author =   {L. P. Chew},
+  title =  {Guaranteed-quality Mesh Generation for Curved Surfaces},
+  booktitle =  scgtitle,
+  year =   {1993},
+  pages =  {274--280}
+}
+ 
+%  author =  {Timothy Lambert},
+@inproceedings{lambert1994,
+  author =   {T. Lambert},
+  title =  {The {D}elaunay Triangulation Maximizes the Mean
+                  Inradius},
+  booktitle =  {Proc. 6th Canadian Conf. on Computational Geometry},
+  pages =  {201--206},
+  year =   {1994}
+}
+
+%  author =  {Gabriel Peyr\'e and Laurent Cohen},
+@inproceedings{peyre2003,
+  author =   {G. Peyr\'e and L. Cohen},
+  title =  {Geodesic Remeshing Using Front Propagation},
+  booktitle =  {Proceedings {IEEE} Workshop on Variational and Level
+                  Set Methods},
+  pages =  {33--40},
+  year =   {2003}
+}
+
+@article{peyre2006,
+  author =   {G. Peyr\'e and L. Cohen},
+  title =  {Geodesic Remeshing Using Front Propagation},
+  journal =  {International Journal on Computer Vision},
+  volume =   {69},
+  number =   {1},
+  pages =  {145--156},
+  year =   {2006}
+}
+
+%  author =  {Matthew Fisher and Boris Springborn and Alexander
+%                  I. Bobenko and Peter Schr\"oder},
+@inproceedings{fisher2006,
+  author =   {M. Fisher and B. Springborn and A. I. Bobenko and
+                  P. Schr\"oder},
+  title =  {An algorithm for the construction of intrinsic
+                  {D}elaunay triangulations with applications to
+                  digital geometry processing},
+  booktitle =  {{SIGGRAPH} Courses},
+  year =   {2006},
+  pages =  {69--74}
+}
+
+%  booktitle =   {SIGGRAPH '06: ACM SIGGRAPH 2006 Courses},
+%  location =  {Boston, Massachusetts},
+%  publisher =   {ACM Press},
+%  address =   {New York, NY, USA},
+%  note =  {http://www.multires.caltech.edu/pubs/}
+
+%  author =  {Nina Amenta and Sunghee Choi and Tamal K. Dey and Naveen Leekha},                  
+% DEPRECATED (conference version)
+@inproceedings{amenta2000socg,
+  author =   {Amenta, N. and Choi, S. and Dey, T. K. and Leekha, N.},
+  title =  {{A Simple Algorithm for Homeomorphic Surface
+                  Reconstruction}},
+  booktitle =  scgtitle,
+  pages =  {213--222},
+  year =   {2000}
+}
+
+@article{amenta2002,
+  author =   {Amenta, N. and Choi, S. and Dey, T. K. and Leekha,
+                  N.},
+  title =  {A Simple Algorithm for Homeomorphic Surface
+                  Reconstruction},
+  journal =  {Int. J. Computational Geometry and Applications},
+  volume =   {12},
+  number =   {2},
+  pages =  {125--141},
+  year =   {2002}
+}
+
+
+%  author =  {Jean-Daniel Boissonnat and Steve Oudot},
+@inproceedings{boissonnat2003,
+  author =   {J.-D. Boissonnat and S. Oudot},
+  title =  {Provably Good Surface Sampling and Approximation},
+  booktitle =  sgptitle,
+  pages =  {9--18},
+  year =   {2003}
+}
+
+%  author =  {Herbert Edelsbrunner and Nimish R. Shah},
+@inproceedings{edelsbrunner1994,
+  author =   {H. Edelsbrunner and N. R. Shah},
+  title =  {Triangulating topological spaces},
+  booktitle =  scgtitle,
+  year =   {1994},
+  pages =  {285--292}
+}
+
+@article{edelsbrunner1997rdt,
+  author    = {Edelsbrunner, H. and Shah, N. R.},
+  title     = {Triangulating Topological Spaces},
+  journal   = {Int. J. Comput. Geometry Appl.},
+  volume    = {7},
+  number    = {4},
+  year      = {1997},
+  pages     = {365-378},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{edelsbrunner1992,
+  author =   {H. Edelsbrunner and N. R. Shah},
+  title =  {Incremental topological flipping works for regular
+                  triangulations},
+  booktitle =  scgtitle,
+  year =   {1992},
+  pages =  {43--52}
+}
+
+
+%  author =  {Tamal K. Dey and Gang Li and Tathagata Ray},
+@inproceedings{dey2005,
+  author =   {T. K. Dey and G. Li and T. Ray},
+  title =  {Polygonal Surface Remeshing with {D}elaunay Refinement},
+  booktitle =  mrttitle,
+  pages =  {343--361},
+  year =   {2005}
+}
+
+
+@inproceedings{sifri2003,
+  author =   {Oren Sifri and Alla Sheffer and Craig Gotsman},
+  title =  {Geodesic-Based Surface Remeshing},
+  booktitle =  mrttitle,
+  pages =  {189--199},
+  year =   {2003}
+}
+
+@inproceedings{gopi2000,
+  author =   {M. Gopi and S. Krishnan and C. T. Silva},
+  title =  {Surface Reconstruction Based on Lower Dimensional
+                  Localized {D}elaunay Triangulation},
+  journal =  {Computer Graphics Forum (Eurographics)},
+  volume =   {19},
+  number =   {3},
+  pages =  {467--478},
+  editor =   {M. Gross and F. R. A. Hopgood},
+  year =   {2000},
+}
+
+%  author =  {Lyuba Alboul and Willie Brink and Marcos Rodrigues},
+@inproceedings{alboul2006,
+  author =   {Alboul, L. and Brink, W. and Rodrigues, M.},
+  title =  {Mesh optimisation based on {W}illmore energy},
+  booktitle =  {Euro. Workshop on Comp. Geom.},
+  pages =  {133--136},
+  year =   {2006}
+}
+
+%  author =  {Joseph O'Rourke},
+@inproceedings{orourke1981,
+  author =   {J. O'Rourke},
+  title =  {Polyhedra of minimal area as 3{D} object models},
+  booktitle =  {Intl. Joint Conf. on AI},
+  pages =  {664--666},
+  year =   {1981}
+}
+
+@inproceedings{kimmel1998,
+  author =   {R. Kimmel and J. A. Sethian},
+  title =  {Computing geodesic paths on manifolds},
+  booktitle =  {Proceedings of National Academy of Sciences},
+  volume =   {95(15)},
+  pages =  {8431--8435},
+  year =   {1998}
+}
+
+%  author =  {Oleg R. Musin},
+@inproceedings{musin1997,
+  author =   {O. R. Musin},
+  title =  {Properties of the {D}elaunay triangulation},
+  booktitle =  scgtitle,
+  year =   {1997},
+  pages =  {424--426},
+  location =   {Nice, France},
+  doi =    {http://doi.acm.org/10.1145/262839.263061},
+}
+
+@article{floriani2004,
+  author =   {L. De Floriani and P. Magillo and E. Puppo and
+                  D. Sobrero},
+  title =  {{A Multi-Resolution Topological Representation for
+                  Non-manifold Meshes}},
+  journal =  {Computer-Aided Design},
+  volume =   36,
+  number =   2,
+  pages =  {141--159},
+  year =   2004
+}
+ 
+@misc{shewchuk1999,
+  author =   "Jonathan Richard Shewchuk",
+  title =  "Lecture Notes on {D}elaunay Mesh Generation",
+  text =   "SHEWCHUK J. R.: Lecture Notes on {D}elaunay Mesh
+                  Generation. Tech. rep., University of California at
+                  Berkeley, 1999. 3",
+  year =   "1999"
+}
+
+@article{bretschneider1842,
+  author =   {C. A. Bretschneider},
+  title =  {{Untersuchung der trigonometrischen Relationen des
+                  geradlinigen Viereckes.}},
+  journal =  {Archiv der Math.},
+  volume =   {2},
+  pages =  {225--261},
+  year =   {1842}
+}
+
+@techreport{lawson1972,
+  author =   {C. L. Lawson},
+  title =  {Generation of a triangular grid with application to
+                  contour plotting},
+  institution =  {California Instutute of Technolgy Jet Propulsion
+                  Laboratory},
+  year =   {1972},
+  type =   {Section 914},
+  number =   {Memo 299}
+}
+                  
+@incollection{lawson1977,
+  author =       {C. L. Lawson},
+  title =        {Software for {$C^1$} surface interpolation},
+  booktitle =       {Math. Software III},
+  editor =       {J. R. Rice},
+  pages =        {161--194},
+  year =         1977,
+  publisher =    {Academic Press},
+  address =      {New York}
+}
+
+@book{massey1967,
+  author =   {William S. Massey},
+  title =  {Algebraic Topology: An Introduction},
+  publisher =  {Springer-Verlag},
+  year =   {1967}
+}
+
+%  author =  {Mar\'ia-Cecilia Rivara and Patricio Inostroza},
+@article{rivara1997,
+  author =   {M.-C. Rivara and P. Inostroza},
+  title =  {Using Longest-Side Bisection Techniques for the
+                  Automatic Refinement of {D}elaunay Triangulations},
+  journal =  {Int. J. Num. Meth. in Eng.},
+  volume =   {40},
+  pages =  {581--597},
+  year =   {1997}
+}
+
+@article{cignoni1998,
+  author =   {P. Cignoni and C. Rocchini and R. Scopigno},
+  title =  {Metro: Measuring Error on Simplified Surfaces},
+  journal =  {Computer Graphics Forum},
+  volume =   {17},
+  number =   {2},
+  pages =  {167--174},
+  year =   {1998}
+}
+
+@article{ruppert1995,
+  author =   {J. Ruppert},
+  title =  {A {D}elaunay Refinement Algorithm for Quality
+                  2-Dimensional Mesh Generation},
+  journal =  {J. of Algorithms},
+  volume =   {18},
+  number =   {3},
+  pages =  {548--585},
+  year =   {1995}
+}
+
+%  author =  {Jim Ruppert},
+% {{SODA} '93: Proceedings of the fourth annual {ACM-SIAM}
+%                  symposium on discrete algorithms},
+%  location =  {Austin, Texas, United States},
+%  publisher =   {Society for Industrial and Applied Mathematics},
+%  address =   {Philadelphia, PA, USA}
+@inproceedings{ruppert1993,
+  author =   {J. Ruppert},
+  title =  {A new and simple algorithm for quality 2-dimensional
+                  mesh generation},
+  booktitle =  sodatitle,
+  year =   {1993},
+  pages =  {83--92}
+}
+
+
+@article{floater1998,
+  author =   {Michael S. Floater},
+  title =  {Parametric tilings and scattered data approximation},
+  journal =  {Int. J. of Shape Modeling},
+  volume =   {4},
+  year =   {1998},
+  pages =  {165--182}
+}
+
+%  author =   {Herbert Edelsbrunner and Tiow Seng Tan},
+@article{edelsbrunner1993,
+  author =   {H. Edelsbrunner and T. S. Tan},
+  title =    {An Upper Bound for Conforming {D}elaunay
+                  Triangulations},
+  journal =  {Discrete and Computational Geometry},
+  volume =   {10},
+  number =   {2},
+  year =     {1993},
+  pages =    {197--213}
+}
+
+%  author =  {Jean-Daniel Boissonnat and Leonidas J. Guibas and
+%                  Steve Oudot},
+@inproceedings{boissonnat2005,
+  author =   {J.-D. Boissonnat and L. J. Guibas and
+                  S. Oudot},
+  title =  {Learning smooth objects by probing},
+  booktitle =  scgtitle,
+  year =   {2005},
+  pages =  {198--207}
+}
+%  publisher =   {ACM Press},
+%  address =   {New York, NY, USA},
+
+%  author =  {Nina Amenta and Marshall Bern and David Eppstein},
+@article{amenta1998bc,
+  author =   {Amenta, N. and Bern, M. W. and Eppstein, D.},
+  title =  {The crust and the beta-skeleton: combinatorial curve
+                  reconstruction},
+  journal =  {Graphical Models and Image Processing},
+  volume =   {60},
+  number =   {2},
+  year =   {1998},
+  pages =  {125--135}
+}
+
+%  author =  {Ernst Althaus and Kurt Mehlhorn},
+@article{althaus2001,
+  author =   {E. Althaus and K. Mehlhorn},
+  title =  {Traveling Salesman-Based Curve Reconstruction in
+                  Polynomial Time},
+  journal =  {SIAM J. Comput.},
+  volume =   {31},
+  number =   {1},
+  year =   {2001},
+  pages =  {27--66}
+}
+
+%  author =  {Joachim Giesen},
+@inproceedings{giesen1999scg,
+  author =   {J. Giesen},
+  title =  {Curve reconstruction, the traveling salesman problem
+                  and {M}enger's theorem on length},
+  booktitle =  scgtitle,
+  year =   {1999},
+  pages =  {207--216}
+}
+
+@article{giesen1999,
+  author =   {J. Giesen},
+  title =  {Curve Reconstruction in Arbitrary Dimension and the
+                  Traveling Salesman Problem},
+  journal =  {Lecture Notes in Computer Science},
+  volume =   {1568},
+  pages =  {164--176},
+  year =   {1999}
+}
+
+%  author =  {Leonidas Guibas and Daniel Russel},
+@inproceedings{guibas2004,
+  author =   {L. J. Guibas and D. Russel},
+  title =  {An empirical comparison of techniques for updating
+                  {D}elaunay triangulations},
+  booktitle =  scgtitle,
+  year =   {2004},
+  pages =  {170--179}
+ }
+
+%  author =  {Lyuba Alboul and Gertjan Kloosterman and Cornelis
+%                  Traas and Ruud van Damme},
+@article{alboul2000,
+  author =   {L. Alboul and G. Kloosterman and C.
+                  Traas and R. van Damme},
+  title =  {Best data-dependent triangulations},
+  journal =  {J. Comput. Appl. Math.},
+  volume =   {119},
+  number =   {1-2},
+  year =   {2000},
+  pages =  {1--12}
+}
+
+%  author =  {Manfredo P. do Carmo},
+@book{docarmo1992,
+  author =   {M. P. do Carmo},
+  title =  {{R}iemannian Geometry},
+  publisher =  {Birkh\"auser},
+  year =   {1992}
+}
+
+%  author =  {Victor A. Toponogov},
+@book{toponogov2006,
+  author =   {V. A. Toponogov},
+  title =  {Differential Geometry of Curves and Surfaces},
+  subtitle =   {A concise guide},
+  publisher =  {Birkh\"auser},
+  year =   {2006}
+}
+
+%  author =  {Wilhelm P. A. Klingenberg},
+@book{klingenberg1995,
+  author =   {W. P. A. Klingenberg},
+  title =  {{R}iemannian Geometry},
+  publisher =  {Walter de Gruyter},
+  edition =  {second},
+  year =   {1995}
+}
+
+%  author =  {Jean-Daniel Boissonnat and Fr\'ed\'eric Cazals},
+@article{boissonnat2001,
+  author =   {J.-D. Boissonnat and F. Cazals},
+  title =  {Natural Neighbour Coordinates of Points on a
+                  Surface},
+  journal =  {Computational Geometry Theory and Applications},
+  volume =   {19},
+  number =   {2},
+  year =   {2001},
+  pages =  {155--173}
+}
+
+%  author =  {Gregory Leibon},
+@phdthesis{leibon1999,
+  author =   {G. Leibon},
+  title =  {Random {D}elaunay triangulations, the {T}hurston-{A}ndreev
+                  theorem, and metric uniformization},
+  school =   {UCSD},
+  year =   {1999},
+  note =   {arXiv:\-math/\-0011016v1}
+}
+
+%  author =  {Sharif Elcott and Peter Schr\"{o}der},
+@inproceedings{elcott2006,
+  author =   {S. Elcott and P. Schr\"{o}der},
+  title =  {Building your own {DEC} at home},
+  booktitle =  {{ACM SIGGRAPH} courses},
+  pages =  {1--5},
+  year =   {2006}
+}
+              
+%  author =  {David Glickenstein},
+@misc{glickenstein2005,
+  author =   {D. Glickenstein},
+  title =  {Geometric triangulations and discrete {L}aplacians on
+                  manifolds},
+  year =   {2005},
+  note =   {arxiv:math.MG/0508188v1}
+}
+
+@article{glickenstein2007,
+  author =   {Glickenstein, D.},
+  title =  {A Monotonicity Property for Weighted {D}elaunay
+                  Triangulations},
+  journal =  DCGtitle,
+  volume =   {38},
+  number =   {4},
+  pages =  {651--664},
+  year =   {2007}
+}
+
+
+%  author =  {Max Wardetzky and Saurabh Mathur and Felix
+%                  K\"{a}lberer and Eitan Grinspun},
+@inproceedings{wardetzky2007sgp,
+  author =   {M. Wardetzky and S. Mathur and F.  K\"{a}lberer and
+                  E. Grinspun},
+  title =  {Discrete {L}aplace operators: no free lunch},
+  booktitle =  sgptitle,
+  year =   {2007},
+  pages =  {33--37}
+}
+
+@article{wardetzky2007cagd,
+  author =   {Max Wardetzky and Mikl\'{o}s Bergou and David Harmon
+                  and Denis Zorin and Eitan Grinspun},
+  title =  {Discrete quadratic curvature energies},
+  journal =  {Comput. Aided Geom. Des.},
+  volume =   {24},
+  number =   {8-9},
+  year =   {2007},
+  pages =  {499--518}
+}
+
+%  author =  {Jie Gao and Leonidas J. Guibas and Steve Y. Oudot
+%                  and Yue Wang},
+@inproceedings{gao2008,
+  author =   {J. Gao and L. J. Guibas and S. Y. Oudot
+                  and Y. Wang},
+  title =  {Geodesic {D}elaunay triangulation and witness complex
+                  in the plane},
+  booktitle =  sodatitle,
+  year =   {2008},
+  pages =  {571--580}
+}
+
+%%%% Finally the last is the best ref of these three
+
+@techreport{cazals2004trShort,
+  author =   "Cazals, Fr\'ed\'eric and Giesen, Joachim and Yvinec,
+                  Mariette",
+  title =  "{D}elaunay Triangulation Based Surface Reconstruction:
+                  a short survey",
+  institution =  "INRIA",
+  number =   "5394",
+  year =   "2004",
+  type =   "Research Report",
+  url =    "http://cgal.inria.fr/Publications/2004/CGY04"
+}
+
+%  author =  "Cazals, Fr\'ed\'eric and Giesen, Joachim",
+@techreport{cazals2004tr,
+  author =   "Cazals, F. and Giesen, J.",
+  title =  "{D}elaunay Triangulation Based Surface Reconstruction:
+                  Ideas and algorithms",
+  institution =  "INRIA",
+  number =   "5393",
+  year =   "2004",
+  type =   "Research Report",
+}
+
+%  author =  {Cazals, Fr\'ed\'eric and Giesen, Joachim},
+%  editor =  {Jean-Daniel Boissonnat and Monique Teillaud},
+@incollection{cazals2006,
+  author =   {Cazals, F. and Giesen, J.},
+  title =  {{D}elaunay Triangulation Based Surface
+                  Reconstruction},
+  booktitle =  {Effective Computational Geometry for Curves and
+                  Surfaces},
+  publisher =  {Springer},
+  editor =   {J.-D. Boissonnat and M. Teillaud},
+  year =   {2006}
+}
+
+%%%%
+
+%  author =  {James R. Munkres},
+@book{munkres1984,
+  author =   {J. R. Munkres},
+  title =  {Elements of Algebraic Topology},
+  publisher =  {Addison-Wesley},
+  year =   {1984}
+}
+
+@book{munkres1968,
+  author =   {J. R. Munkres},
+  title =  {Elementary differential topology},
+  publisher =  {Princton University press},
+  edition =  {second},
+  year =   {1968}
+}
+
+%  author =  {Herbert Edelsbrunner and David Letscher and Afra
+%                  Zomorodian},
+@inproceedings{edelsbrunner2000,
+  author =   {H. Edelsbrunner and D. Letscher and A.  Zomorodian},
+  title =  {Topological Persistence and Simplification},
+  booktitle =  {{IEEE} Symposium on Foundations of Computer Science},
+  pages =  {454-463},
+  year =   {2000}
+}
+
+@unpublished{shewchuk2002,
+  author =   {J. R. Shewchuk},
+  title =  {What Is a Good Linear Finite Element? -
+                  Interpolation, Conditioning, Anisotropy, and Quality
+                  Measures},
+  note =
+                  {http://www.cs.berkeley.edu\-/\~{}jrs\-/papers\-/elemj.pdf
+                  (last viewed 2008)},
+  year =   {2002}
+}
+
+%  author =  {Rolf Klein and Derick Wood},
+@inproceedings{klein1988,
+  author =   {R. Klein and D. Wood},
+  title =  {{V}oronoi Diagrams Based on General Metrics in the
+                  Plane},
+  booktitle =  {STACS '88: Proceedings of the 5th Annual Symposium
+                  on Theoretical Aspects of Computer Science},
+  year =   {1988},
+  pages =  {281--291},
+  publisher =  {Springer-Verlag}
+}
+
+%  author =  {Francois Labelle and Jonathan Richard Shewchuk},
+@inproceedings{labelle2003,
+  author =   {F. Labelle and J. R. Shewchuk},
+  title =  {Anisotropic {V}oronoi diagrams and guaranteed-quality
+                  anisotropic mesh generation},
+  booktitle =  scgtitle,
+  year =   {2003},
+  pages =  {191--200}
+}
+
+%  author =  {Edgar A. Ramos and Bardia Sadri},
+@inproceedings{ramos2007,
+  author =   {E. A. Ramos and B. Sadri},
+  title =  {Geometric and topological guarantees for the WRAP
+                  reconstruction algorithm},
+  booktitle =  sodatitle,
+  year =   {2007},
+  pages =  {1086--1095}
+}
+
+@inproceedings{rajan1991,
+  author =   {V. T. Rajan},
+  title =  {Optimality of the {D}elaunay triangulation in $\reel^d$},
+  booktitle =  scgtitle,
+  year =   {1991},
+  pages =  {357--363}
+}
+
+@article{rajan1994,
+  author =   {V. T. Rajan},
+  title =  {Optimality of the {D}elaunay triangulation in
+                  $\reel^d$},
+  journal =  {Discrete and Computational Geometry},
+  volume =   {12},
+  year =   {1994},
+  pages =  {189--202}
+}
+
+@article{dazevedo1989,
+  author =   {E. F. D'Azevedo and R. B. Simpson},
+  title =  {On optimal interpolation triangle incidences},
+  journal =  {SIAM J. Sci. Statist. Comput.},
+  volume =   {10},
+  number =   {6},
+  pages =  {1063--1075},
+  year =   {1989}
+}
+
+@article{voronoi1907,
+  author =   {G. Voronoi},
+  title =  {Nouvelles applications des param\`etres continus \`a
+                  la th\'eorie des formes quadratiques},
+  journal =  {J. Reine Angew. Math.},
+  volume =   {133}, 
+  pages =  {97--178},
+  year =   {1907}
+}
+
+@article{voronoi1908,
+  author =   {G. Voronoi},
+  title =  {Nouvelles applications des param\`etres continus \`a
+                  la th\'eorie des formes quadratiques},
+  journal =  {J. Reine Angew. Math.},
+  volume =   {134}, 
+  pages =  {198--287},
+  year =   {1908}
+}
+
+@article{delaunay1934,
+  author =   {B. Delaunay},
+  title =  {Sur la sph\`ere vide},
+  journal =  {Izv. Akad. Nauk SSSR, Otdelenie Matematicheskii i
+                  Estestvennyka Nauk},
+  volume =   {7},
+  pages =  {793--800},
+  year =   {1934}
+}
+
+@unpublished{amenta2007,
+  author =   {N. Amenta and T. K. Dey},
+  title =  {Normal variation for adaptive feature size},
+  note =   {Erratum (accessed 20101027):
+                  http://www.cs.ucdavis.edu/\-$\sim$amenta/\-pubs/\-pubs.html},
+  year =   {2007}
+}
+
+@article{indermitte2001,
+  author =   {C. Indermitte and T. Liebling and M. Troyanov and
+                  H. Cl\'{e}men\c{c}on},
+  title =  {{V}oronoi diagrams on piecewise flat surfaces and an
+                  application to biological growth},
+  journal =  {Theor. Comput. Sci.},
+  volume =   {263},
+  number =   {1-2},
+  year =   {2001},
+  pages =  {268--274}
+}
+
+@inproceedings{dey2007,
+  author =   {T. K. Dey and J. A. Levine},
+  title =  {{D}elaunay Meshing of Isosurfaces},
+  booktitle =  smititle,
+  year =   {2007},
+  pages =  {241--250}
+}
+
+%  author =  {Siu-Wing Cheng and Tamal K. Dey},
+@misc{cheng2007,
+  author =   {S.-W. Cheng and T. K. Dey},
+  title =  {{D}elaunay Edge Flips in Dense Surface Triangulations},
+  note =   {arXiv.org:0712.1959v1},
+  year =   {2007}
+}
+
+%  author =  {Ernst Althaus and Christian Fink},
+@inproceedings{althaus2002,
+  author =   {E. Althaus and C. Fink},
+  title =  {A Polyhedral Approach to Surface Reconstruction from
+                  Planar Contours},
+  booktitle =  {Integer Programming and Combinatorial Optimization},
+  year =   {2002},
+  pages =  {258--272}
+}
+
+%  Author =  {Evan Vanderzee and Anil N. Hirani and Damrong Guoy
+%                  and Edgar Ramos},
+@techreport{vanderzee2008,
+  title =  {Well-Centered Triangulation},
+  author =   {E. Vanderzee and A. N. Hirani and D. Guoy and
+                  E. Ramos},
+  institution =  {Department of Computer Science, University of
+                  Illinois at Urbana-Champaign},
+  month =  {February},
+  note =   {Also on arXiv: arXiv:0802.2108v1 [cs.CG]},
+  number =   {UIUCDCS-R-2008-2936},
+  year =   {2008}
+}
+
+@article{edelsbrunner2004,
+  author =   {H. Edelsbrunner},
+  title =  {Surface reconstruction by wrapping finite point sets
+                  in space},
+  journal =  {Discrete and Computational Geometry},
+  volume =   {32},
+  pages =  {231--244},
+  year =   {2004}
+}
+
+@inproceedings{kil2008,
+  author =   {Y. J. Kil and N. Amenta},
+  title =  {{GPU}-assisted surface reconstruction on
+                  locally-uniform samples},
+  booktitle =  mrttitle,
+  pages =  {369--385},
+  year =   {2008}
+}
+
+%  author =  {Tamal K. Dey and Joachim Giesen},
+@inproceedings{dey2001,
+  author =   {T. K. Dey and J. Giesen},
+  title =  {Detecting undersampling in surface reconstruction},
+  booktitle =  scgtitle,
+  year =   {2001},
+  pages =  {257--263}
+}
+
+%  author =  {Herbert Edelsbrunner and Ernst P. M\"{u}cke},
+@article{edelsbrunner1994alpha,
+  author =   {H. Edelsbrunner and E. P. M\"{u}cke},
+  title =  {Three-dimensional alpha shapes},
+  journal =  {ACM Trans. Graph.},
+  volume =   {13},
+  number =   {1},
+  year =   {1994},
+  pages =  {43--72}
+}
+
+@incollection{kirkpatrick1985,
+  author =   {D. G. Kirkpatrick and J. D. Radke},
+  title =  {A framework for computational morphology},
+  booktitle =  {Computational Geometry},
+  editor =   {G. T. Toussaint},
+  publisher =  {North-Holland},
+  pages =  {217--248},
+  year =   {1985}
+}
+
+@incollection{sibson1981,
+  author =   {R. Sibson},
+  title =  {A brief description of natural neighbour
+                  interpolation},
+  booktitle =  {Interpreting multivariate data},
+  year =   {1981},
+  pages =  {21--36},
+  editor =   {V. Barnet},
+  publisher =  {John Wiley \& sons}
+}
+
+@book{dey2007book,
+  author =   {T. K. Dey},
+  title =  {Curve and Surface Reconstruction; Algorithms with
+                  Mathematical Analysis},
+  publisher =  {Cambridge University Press},
+  year =   {2007}
+}
+
+%  author =  {Wolfgang Mulzer and G\"{u}nter Rote},
+@inproceedings{mulzer2006,
+  author =   {W. Mulzer and G. Rote},
+  title =  {Minimum weight triangulation is {NP}-hard},
+  booktitle =  scgtitle,
+  year =   {2006},
+  pages =  {1--10}
+}
+
+%  author =  {Gabriel, K. Ruben and Sokal, Robert R.},
+@article{gabriel1969,
+  title =  {A New Statistical Approach to Geographic Variation
+                  Analysis},
+  author =   {Gabriel, K. R. and Sokal, R. R.},
+  journal =  {Systematic Zoology},
+  volume =   {18},
+  number =   {3},
+  pages =  {259--278},
+  year =   {1969}
+}
+
+%  author =  {J. Andreas Baerentzen and Henrik Aanaes},
+@article{baerentzen2005,
+  author =   {J. A. Baerentzen and H. Aanaes},
+  title =  {Signed Distance Computation Using the Angle Weighted
+                  Pseudonormal},
+  journal =  {IEEE Transactions on Visualization and Computer
+                  Graphics},
+  volume =   {11},
+  number =   {3},
+  year =   {2005},
+  pages =  {243--253}
+}
+
+%  author =  {Chi-Wan Lim and Tiow-Seng Tan},
+@article{lim2006,
+  author =   {C.-W. Lim and T.-S. Tan},
+  title =  {Surface reconstruction by layer peeling},
+  journal =  {The Visual Computer},
+  volume =   {22},
+  number =   {9},
+  year =   {2006},
+  pages =  {593--603}
+}
+
+%20090211 changed date: no justification for 2003
+@unpublished{desbrun2005dec,
+  Author =   {M. Desbrun and A. N. Hirani and M. Leok and
+                  J. E. Marsden},
+  Title =  {Discrete Exterior Calculus},
+  Note =   {arXiv:math.DG/0508341},
+  Year =   {2005}
+}
+
+@inproceedings{desbrun2006,
+  author =   {Mathieu Desbrun and Eva Kanso and Yiying Tong},
+  title =  {Discrete differential forms for computational
+                  modeling},
+  booktitle =  {SIGGRAPH Courses Notes},
+  year =   {2006},
+  pages =  {39--54}
+}
+
+%  author =  {Anil N. Hirani},
+@phdthesis{hirani2003,
+  author =   {A. N. Hirani},
+  title =  {Discrete Exterior Calculus},
+  school =   {Caltech},
+  year =   {2003}
+}
+
+
+%%%%%%
+
+%  author =  {Joachim Giesen and Matthias John},
+@article{giesen2002,
+  author =   {J. Giesen and M. John},
+  title =  {Surface reconstruction based on a dynamical system},
+  journal =  {Computer graphics forum},
+  volume =   {21},
+  year =   {2002},
+  pages =  {363--371}
+}
+
+@inproceedings{giesen2003,
+  author =   {J. Giesen and M. John},
+  title =  {The flow complex: a data structure for geometric
+                  modeling},
+  booktitle =  sodatitle,
+  year =   {2003},
+  pages =  {285--294}
+}
+
+%  author =  {Sylvain Petitjean and Edmond Boyer},
+@article{petitjean2001,
+  author =   {S. Petitjean and E. Boyer},
+  title =  {Regular and non-regular point sets: Properties and
+                  reconstruction},
+  journal =  {Computational Geometry: Theory and Applications},
+  volume =   {19},
+  number =   {2-3},
+  year =   {2001},
+  pages =  {101--126}
+}
+
+%  author =  {Rapha\"{e}lle Chaine},
+@inproceedings{chaine2003,
+  author =   {R. Chaine},
+  title =  {A geometric convection approach of 3-{D}
+                  reconstruction},
+  booktitle =  sgptitle,
+  year =   {2003},
+  pages =  {218--229}
+}
+
+%  author =  {Jean-Daniel Boissonnat and Fr\'{e}d\'{e}ric Cazals},
+@inproceedings{boissonnat2000,
+  author =   {J.-D. Boissonnat and F. Cazals},
+  title =  {Smooth surface reconstruction via natural neighbour
+                  interpolation of distance functions},
+  booktitle =  scgtitle,
+  year =   {2000},
+  pages =  {223--232}
+}
+
+@article{boissonnat2005gm,
+  author =   {J.-D. Boissonnat and S. Oudot},
+  title =  {Provably good sampling and meshing of surfaces},
+  journal =  {Graphical Models},
+  volume =   {67},
+  number =   {5},
+  year =   {2005},
+  pages =  {405--451}
+}
+
+%  author =  {Jean-Daniel Boissonnat and Steve Oudot},
+@inproceedings{boissonnat2006,
+  author =   {J.-D. Boissonnat and S. Oudot},
+  title =  {Provably good sampling and meshing of {L}ipschitz
+                  surfaces},
+  booktitle =  scgtitle,
+  year =   {2006},
+  pages =  {337--346},
+}
+
+%  author =  {Franz Aurenhammer and Rolf Klein},
+@incollection{aurenhammer2000,
+  author =   {F. Aurenhammer and R. Klein},
+  title =  {{V}oronoi diagrams},
+  editor =   {J. Sack and G. Urrutia},
+  booktitle =  {Handbook of Computational Geometry},
+  pages =  {201--290},
+  publisher =  {Elsevier Science Publishing},
+  year =   {2000}
+}
+
+%  author =  {Atsuyuki Okabe and Barry Boots and Kokichi Sugihara
+%                  and Sung Nok Chiu },
+@book{okabe2000,
+  author =   {A. Okabe and B. Boots and K. Sugihara and S. N. Chiu
+                  },
+  title =  {Spatial Tessellations: Concepts and Applications of
+                  {V}oronoi Diagrams},
+  publisher =  {John Wiley},
+  edition =  {second},
+  year =   {2000}
+}
+
+@techreport{moenning2003,
+  author =   {Carsten Moenning and Neil Dodgson},
+  title =  {Fast Marching farthest point sampling for point
+                  clouds and implicit surfaces},
+  institution =  {University of Cambridge Computer Laboratory},
+  number =   {565},
+  year =   {2003}
+}
+
+%  author =  {Isaac Chavel},
+@book{chavel2006,
+  title =  {{R}iemannian Geometry, A modern introduction},
+  author =   {I. Chavel},
+  publisher =  {Cambridge},
+  year =   {2006},
+  edition =  {2nd}
+}
+
+@inproceedings{attali2007,
+  author =   {Dominique Attali and Herbert Edelsbrunner and Yuriy
+                  Mileyko},
+  title =  {Weak witnesses for {D}elaunay triangulations of
+                  submanifolds},
+  booktitle =  spmtitle,
+  year =   {2007},
+  pages =  {143--150}
+}
+
+%  author =  {Herbert Federer},
+@article{federer1959,
+  author =   {H. Federer},
+  title =  {Curvature measures},
+  journal =  {Trans. Amer. Math. Soc.},
+  volume =   {93},
+  number =   {3},
+  year =   {1959},
+  pages =  {418--491},
+  publisher =  {American Mathematical Society}
+}
+
+%  author =  {Jean-Marie Morvan and Boris Thibert},
+@article{morvan2004,
+  author =   {J.-M. Morvan and B. Thibert},
+  title =  {Approximation of the Normal Vector Field and the
+                  Area of a Smooth Surface},
+  journal =  DCGtitle,
+  volume =   {32},
+  number =   {3},
+  year =   {2004},
+  pages =  {383-400}
+}
+
+%  author =  {Junfei Dai and Wei Luo and Shing-Tung Yau and
+%                  Xianfeng Gu},
+@inproceedings{dai2006,
+  author =   {J. Dai and W. Luo and S.-T. Yau and X. Gu},
+  title =  {Geometric Accuracy Analysis for Discrete Surface
+                  Approximation},
+  booktitle =  gmptitle,
+  pages =  {59-72},
+  year =   {2006}
+}
+
+%  author =  {Junfei Dai and Wei Luo and Miao Jin and Wei Zeng and
+%                  Ying He and Shing-Tung Yau and Xianfeng Gu},
+@article{dai2007,
+  author =   {J. Dai and W. Luo and M. Jin and W. Zeng and Y. He
+                  and S.-T. Yau and X. Gu},
+  title =  {Geometric accuracy analysis for discrete surface
+                  approximation},
+  journal =  {Comput. Aided Geom. Des.},
+  volume =   {24},
+  number =   {6},
+  year =   {2007},
+  pages =  {323--338}
+}
+
+%  author =  {Siu-Wing Cheng and Tamal K. Dey and Edgar A. Ramos
+%                  and Tathagata Ray},
+@inproceedings{cheng2004,
+  author =   {S.-W. Cheng and T. K. Dey and E. A. Ramos
+                  and T. Ray},
+  title =  {Sampling and Meshing a Surface with Guaranteed
+                  Topology and Geometry},
+  booktitle =  scgtitle,
+  year =   {2004},
+  pages =  {280--289}
+}
+
+@article{gertz2003,
+  author =   {E. M. Gertz and S. J. Wright},
+  title =  {Object-Oriented Software for Quadratic Programming},
+  journal =  {{ACM} Trans. on Math. Software},
+  volume =   {29},
+  year =   {2003},
+  pages =  {58--81}
+}
+%  note =  {\webLink{www.cs.wisc.edu/~swright/ooqp/}}
+
+
+@inproceedings{li2006,
+  author =   {J. Li and H. Zhang},
+  title =  {Nonobtuse Remeshing and Decimation},
+  booktitle =  sgptitle,
+  pages =  {235--238},
+  year =   {2006}
+}
+
+@inproceedings{kazhdan2006,
+  author =   {M. Kazhdan and M. Bolitho and H. Hoppe},
+  title =  {Poisson Surface Reconstruction},
+  booktitle =  sgptitle,
+  pages =  {61--70},
+  year =   {2006}
+}
+
+@inproceedings{bolitho2007,
+  title =  {Multilevel Streaming for Out-of-Core Surface
+                  Reconstruction},
+  author =   {Bolitho, M. and Kazhdan, M. and Burns, R. and Hoppe,
+                  H.},
+  booktitle =  sgptitle,
+  pages =  {69--78},
+  year =   {2007}
+}
+
+@inproceedings{giesen2003scg,
+  author =   {Joachim Giesen and Uli Wagner},
+  title =  {Shape dimension and intrinsic metric from samples of
+                  manifolds with high co-dimension},
+  booktitle =  scgtitle,
+  year =   {2003},
+  pages =  {329--337}
+}
+                  
+@article{giesen2004,
+  author =   {Giesen, J. and Wagner, U.},
+  title =  {Shape Dimension and Intrinsic Metric from Samples of
+                  Manifolds},
+  journal =  DCGtitle,
+  volume =   {32},
+  issue =  {2},
+  year =   {2004},
+  pages =  {245--267},
+  publisher =  {Springer-Verlag New York, Inc.}
+} 
+
+
+
+%  author =  {Marco Attene and Michela Spagnuolo},
+@article{attene2000,
+  author =   {M. Attene and M. Spagnuolo},
+  title =  {Automatic surface reconstruction from point sets in
+                  space},
+  journal =  {Computer Graphics Forum},
+  year =   {2000},
+  volume =   {19},
+  pages =  {457--465}
+}
+
+%  author =  {Daniel Dumitriu and Stefan Funke and Martin Kutz and
+%                  Nikola Milosavljevi\'c},
+@inproceedings{dumitriu2008,
+  author =   {D. Dumitriu and S. Funke and M. Kutz and
+                  N. Milosavljevi\'c},
+  title =  {On the Locality of Extracting a 2-Manifold in
+                  $\rthree$},
+  booktitle =  {Proc. of the 11th Scandinavian Workshop on Algorithm
+                  Theory (SWAT)},
+  pages =  {270-281},
+  year =   {2008}
+}
+
+@article{dumitriu2009,
+  title =  {{How much Geometry it takes to Reconstruct a
+                  2-Manifold in $\rthree$}},
+  author =   {Dumitriu, D. and Funke, S. and Kutz, M. and
+                  Milosavljevic, N.},
+  journal =  {J. Exp. Algorithmics},
+  volume =   {14},
+  year =   {2009},
+  pages =  {2.2--2.2:17},
+  doi =    {http://doi.acm.org/10.1145/1498698.1537597},
+  publisher =  {ACM},
+  address =  {New York, NY, USA}
+}
+
+
+
+@article{ruiz2008,
+  author =   {Oscar E. Ruiz and Carlos Cadavid and Juan G. Lalinde
+                  and Ricardo Serrano and Guillermo Peris-Fajarnes},
+  title =  {Gabriel-constrained Parametric Surface
+                  Triangulation},
+  journal =  {Proceedings of World Academy of Science,
+                  Engineering, and Technolgy},
+  volume =   {34},
+  pages =  {578--585},
+  year =   {2008}
+}
+
+%  author =  {Jeff Erickson},
+@inproceedings{erickson2001,
+  author =   {J. Erickson},
+  title =  {Nice point sets can have nasty {D}elaunay
+                  triangulations},
+  booktitle =  scgtitle,
+  year =   {2001},
+  pages =  {96--105}
+}
+
+@article{vallet2008,
+    author = {B. Vallet and B. L\'{e}vy},
+    title = {Spectral Geometry Processing with Manifold Harmonics},
+    journal = eurographics,
+    volume = {27},
+    number = {2},
+    pages = {251--260},
+    year = {2008}
+}
+
+%  author =  {Siu-Wing Cheng and  Tamal K. Dey},
+@inproceedings{cheng2008,
+  author =   {S.-W. Cheng and  T. K. Dey},
+  title =  {Maintaining deforming surface meshes},
+  booktitle =  sodatitle,
+  pages =  {112--121},
+  year =   {2008}
+}
+
+
+% maybe  2003
+%  author =  {Simon King},
+@article{king2002,
+  author =   {S. King},
+  title =  {Regular flip equivalence of surface triangulations},
+  journal =  {Topology and its applications},
+  volume =   {127},
+  pages =  {169--173},
+  year =   {2002}
+}
+
+@article{hanke1996,
+  author =   {Sabine Hanke and Thomas Ottmann and Sven Schuierer},
+  title =  {The Edge-Flipping Distance of Triangulations},
+  journal =  {J. Universal Computer Science},
+  year =   {1996},
+  volume =   {2},
+  pages =  {570--579}
+}
+
+
+%  author =  {Agarwal, Pankaj K. and Sadri, Bardia and Yu, Hai},
+@inproceedings{agarwal2008,
+  author =   {Agarwal, P. K. and Sadri, B. and Yu, H.},
+  title =  {Untangling triangulations through local
+                  explorations},
+  booktitle =  scgtitle,
+  pages =  {288--297},
+  year =   {2008}
+}
+
+
+@inproceedings{gumhold2001,
+  title =  {Feature extraction from point clouds},
+  author =   {Gumhold, S. and Wang, X. and MacLeod, R.},
+  booktitle =  mrttitle,
+  pages =  {293--305},
+  year =   {2001}
+}
+
+@inproceedings{funke2002,
+  author =   {Funke,, Stefan and Ramos,, Edgar A.},
+  title =  {Smooth-surface reconstruction in near-linear time},
+  booktitle =  sodatitle,
+  pages =  {781--790},
+  year =   {2002}
+}
+
+%  author =  {Herbert Edelsbrunner and Ernst Peter Mücke},
+@article{edelsbrunner1990,
+  author =   {H. Edelsbrunner and E. P. M\"{u}cke},
+  title =  {Simulation of Simplicity: A Technique to Cope with
+                  Degenerate Cases in Geometric Algorithms},
+  journal =  {ACM Trans. Graph},
+  year =   {1990},
+  volume =   {9},
+  pages =  {66--104}
+}
+
+@article{aichholzer2002,
+  title =  {On flips in polyhedral surfaces},
+  author =   {Aichholzer, O. and Alboul, L.S. and Hurtado, F.},
+  journal =  {International Journal of Foundations of Computer
+                  Science},
+  volume =   {13},
+  number =   {2},
+  pages =  {303--311},
+  year =   {2002}
+}
+
+@inproceedings{alboul2003,
+  title =  {Optimising triangulated polyhedral surfaces with
+                  self-intersections},
+  author =   {Alboul, L.},
+  booktitle =  {10th IMA international conference on the Mathematics
+                  of Surfaces},
+  note =   {Lecture notes in computer science},
+  pages =  {48--72},
+  year =   {2003},
+  publisher =  {Springer-Verlag}
+}
+
+@book{hatcher2002,
+  title =  {Algebraic topology},
+  author =   {Hatcher, A.},
+  year =   {2002},
+  publisher =  {Cambridge University Press}
+}
+
+@article{tutte1963,
+  author =   {W. T. Tutte},
+  title =  {How to Draw a Graph},
+  journal =  {Proc. London Math. Society},
+  volume =   {13},
+  pages =  {743--768},
+  year =   1963,
+}
+
+@article{toralballa1970,
+  title =  {A geometric theory of surface area},
+  author =   {Toralballa, L. V.},
+  journal =  {Monatshefte f\"{u}r Mathematik},
+  volume =   {74},
+  number =   {5},
+  pages =  {462--476},
+  year =   {1970},
+  publisher =  {Springer}
+}
+@article{alpert1972,
+  title =  {An elementary definition of surface area in
+                  $\mathbf{E}^{n+1}$ for smooth surfaces},
+  author =   {Alpert, L. I. and Toralballa, L. V.},
+  journal =  {Pacific Journal of Mathematics},
+  volume =   {40},
+  number =   {2},
+  pages =  {261--268},
+  year =   {1972}
+}
+
+@article{albers1998,
+  title =  {{V}oronoi diagrams of moving points},
+  author =   {Albers, G. and Guibas, L. J. and Mitchell, J. S. B. and
+                  Roos, T.},
+  journal =  {International Journal of Computational Geometry and
+                  Applications},
+  volume =   {8},
+  number =   {3},
+  pages =  {365--380},
+  year =   {1998}
+}
+
+@article{negami1994,
+  title =  {Diagonal flips in triangulations of surfaces},
+  author =   {Negami, S.},
+  journal =  {Discrete Mathematics},
+  volume =   {135},
+  number =   {1-3},
+  pages =  {225--232},
+  year =   {1994},
+  publisher =  {Elsevier Science Publishers BV Amsterdam, The
+                  Netherlands, The Netherlands}
+}
+
+@article{colindeverdiere1990,
+  title =  {Triangulations presque \'equilat{\'e}rales des
+                  surfaces},
+  author =   {Colin de Verdi\`ere, Y. and Marin, A.},
+  journal =  {J. Differential Geom},
+  volume =   {32},
+  number =   {1},
+  pages =  {199--207},
+  year =   {1990}
+}
+
+@inproceedings{kolluri2004,
+  title =  {Spectral surface reconstruction from noisy point
+                  clouds},
+  author =   {Kolluri, R. and Shewchuk, J. R. and O'Brien, J. F.},
+  booktitle =  sgptitle,
+  pages =  {11--21},
+  year =   {2004}
+}
+
+@book{ratcliffe2006,
+  title={Foundations of hyperbolic manifolds},
+  author={Ratcliffe, J.G.},
+  year={2006},
+  publisher={Springer Verlag}
+}
+
+% used the canonical Gab triangle:                  
+@inproceedings{mederos2003,
+  title =  {Moving least squares multiresolution surface
+                  approximation},
+  author =   {Mederos, B. and Velho, L. and De Figueiredo, LH},
+  booktitle =  {Computer Graphics and Image Processing,
+                  2003. SIBGRAPI 2003. XVI Brazilian Symposium on},
+  pages =  {19--26},
+  year =   {2003}
+}
+
+%  author =  {William M. Boothby},
+@book{boothby1975,
+  title =  {An Introduction to Differentiable Manifolds and
+                  Riemannian Geometry},
+  author =   {W. M. Boothby},
+  year =   {1975},
+  publisher =  {Academic Press},
+  address =  {New York}
+}
+
+
+@book{boothby1986,
+  title =  {An Introduction to Differentiable Manifolds and
+                  Riemannian Geometry},
+  author =   {W. M. Boothby},
+  year =   {1986},
+  edition =  {Second},
+  publisher =  {Academic Press},
+  address =  {Orlando, Florida}
+}
+
+
+@article{alliez2005,
+  title =  {Variational tetrahedral meshing},
+  author =   {Alliez, P. and Cohen-Steiner, D. and Yvinec, M. and
+                  Desbrun, M.},
+  journal =  sigjournal,
+  volume =   {24},
+  number =   {3},
+  year =   {2005},
+  pages =  {617--625},
+  publisher =  sigpub
+}
+
+@book{dugundji1966,
+  title =  {Topology},
+  author =   {Dugundji, J.},
+  year =   {1966},
+  publisher =  {Allyn and Bacon, Inc.},
+  address =  {Boston}
+}
+
+@inproceedings{dey2001super,
+  title =  {{D}elaunay based shape reconstruction from large
+                  data},
+  author =   {Dey, T. K. and Giesen, J. and Hudson, J.},
+  booktitle =  {PVG 01: IEEE Symposium on Parallel and Large-Data
+                  Visualization and Graphics},
+  pages =  {19--27},
+  year =   {2001}
+}
+
+@article{manson2008,
+  title =  {Streaming surface reconstruction using wavelets},
+  author =   {Manson, J. and Petrova, G. and Schaefer, S.},
+  journal =  sgpjournal,
+  volume =   {27},
+  number =   {5},
+  pages =  {1411--1420},
+  year =   {2008}
+}
+
+@article{mullen2010,
+  title =  {Signing the Unsigned: Robust Surface Reconstruction
+                  from Raw Pointsets},
+  author =   {Mullen, P. and De Goes, F. and Desbrun,
+                  M. and Cohen-Steiner, D. and Alliez, P.},
+  journal =  sgpjournal,
+  volume =   {29},
+  number =   {5},
+  pages =  {1733--1741},
+  year =   {2010},
+}
+
+@inproceedings{schall2005,
+  title =  {Surface from scattered points: a brief survey of
+                  recent developments},
+  author =   {Schall, O. and Samozino, M.},
+  booktitle =  {First International Workshop on Semantic Virtual
+                  Environments},
+  pages =  {138--147},
+  year =   {2005}
+}
+
+@article{guibas2008,
+  title =  {Reconstruction using witness complexes},
+  author =   {Guibas, L.J. and Oudot, S.Y.},
+  journal =  DCGtitle,
+  volume =   {40},
+  number =   {3},
+  pages =  {325--356},
+  year =   {2008},
+  publisher =  {Springer}
+}
+
+@article{bolitho2009,
+  title =  {Parallel {P}oisson surface reconstruction},
+  author =   {Bolitho, M. and Kazhdan, M. and Burns, R. and Hoppe,
+                  H.},
+  journal =  {Advances in Visual Computing},
+  pages =  {678--689},
+  year =   {2009},
+  publisher =  {Springer}
+}
+
+@article{boissonnat1984,
+  author =   {Boissonnat, J.-D.},
+  title =  {Geometric structures for three-dimensional shape
+                  representation},
+  journal =  {ACM Trans. Graph.},
+  volume =   {3},
+  number =   {4},
+  year =   {1984},
+  pages =  {266--286}
+}
+
+@article{dey2010locdel,
+  title =  {Localized {D}elaunay refinement for sampling and
+                  meshing},
+  author =   {Dey, T. K. and Levine, J. A. and A. Slatton, A.},
+  journal =  sgpjournal,
+  volume =   {29},
+  number =   {5},
+  pages =  {1723--1732},
+  year =   {2010}
+}
+
+% There are at least three potentially useful chazal2005 publications
+@article{chazal2005isotopy,
+  author =   {Chazal, F. and Cohen-Steiner, D.},
+  title =  {A condition for isotopic approximation},
+  journal =  {Graph. Models},
+  volume =   {67},
+  number =   {5},
+  year =   {2005},
+  pages =  {390--404},
+  doi =    {http://dx.doi.org/10.1016/j.gmod.2005.01.005},
+  publisher =  {Academic Press Professional, Inc.},
+  address =  {San Diego, CA, USA},
+}
+
+@article{bobenko2004,
+  author =   {Bobenko, A. I. and Springborn, B. A.},
+  title =  {Variational principles for circle patterns and
+                  {K}oebe's theorem},
+  journal =  {Transactions of the A.M.S.},
+  volume =   {356},
+  number =   {2},
+  pages =  {659--689},
+  year =   {2004},
+  publisher =  {American Mathematical Society}
+}
+
+@article {edelsbrunner1997,
+  author =   {Edelsbrunner, H. and Ramos, E.},
+  title =  {Inclusion-exclusion complexes for pseudodisk
+                  collections},
+  journal =  DCGtitle,
+  publisher =  {Springer New York},
+  pages =  {287-306},
+  volume =   {17},
+  issue =  {3},
+  url =    {http://dx.doi.org/10.1007/PL00009295},
+  year =   {1997}
+}
+
+@book{berger2003pano,
+  author =   {M. Berger},
+  title =  {A panoramic view of {R}iemannian geometry},
+  publisher =  {Springer-Verlag},
+  address =  {Berlin},
+  year =   {2003}
+}
+
+@article{thomassen1992,
+  author =   {Thomassen, C.},
+  title =  {The {J}ordan-{S}ch\"{o}nflies theorem and the
+                  classification of surfaces},
+  journal =  {American Mathematical Monthly},
+  volume =   {99},
+  number =   {2},
+  pages =  {116--130},
+  year =   {1992}
+}
+
+@book{gromov1999,
+  title =  {Metric structures for {R}iemannian and
+                  non-{R}iemannian spaces},
+  author =   {Gromov, M. and Katz, M. and Pansu, P. and Semmes,
+                  S.},
+  year =   {1999},
+  publisher =  {Birkhauser}
+}
+
+@book{gromov2007,
+  title =  {Metric structures for {R}iemannian and
+                  non-{R}iemannian spaces},
+  author =   {Gromov, M. and Katz, M. and Pansu, P. and Semmes,
+                  S.},
+  isbn =   {0817645829},
+  year =   {2007},
+  publisher =  {Birkhauser}
+}
+
+@book{trefethen1997,
+  title =  {Numerical linear algebra},
+  author =   {Trefethen, L.N. and Bau, D.},
+  isbn =   {0898713617},
+  year =   {1997},
+  publisher =  {Society for Industrial Mathematics}
+}
+
+@inproceedings{attali2003,
+  title =  {Complexity of the {D}elaunay triangulation of points
+                  on surfaces: the smooth case},
+  author =   {Attali, D. and Boissonnat, J.D. and Lieutier, A.},
+  booktitle =  scgtitle,
+  pages =  {201--210},
+  year =   {2003},
+  organization = {ACM}
+}
+
+@article{bauer2010,
+  author =   {Ulrich Bauer and Konrad Polthier and Max Wardetzky},
+  title =  {Uniform convergence of discrete curvatures from nets
+                  of curvature lines},
+  journal =  DCGtitle,
+  publisher =  {Springer},
+  volume =   {43},
+  pages =  {798--823},
+  year =   {2010}
+}
+
+@misc{cgal,
+  author =   {{\sc Cgal}},
+  title =  {{C}omputational {G}eometry {A}lgorithms {L}ibrary},
+  url =    {http://www.cgal.org},
+  year =   {Version 3.6}
+}
+
+@book{cgal:eb-15b,
+ title  = {User and Reference Manual},
+ author  = {CGAL},
+ publisher  = {CGAL Editorial Board},
+ edition  = {4.7},
+ year  = 2015,
+ url =  "http://doc.cgal.org/4.7/Manual/packages.html"
+}
+
+@phdthesis{oudot2005,
+  author =  {Oudot, S.},
+  title =  {Sampling and Meshing Surfaces with Guarantees},
+  school =  {\'{E}cole Polytechnique, Palaiseau, France},
+  year =  {2005}
+}
+
+@article{allegre2007,
+  author =   {R. All\`{e}gre and R. Chaine and S. Akkouche},
+  title =  {A Flexible Framework for Surface Reconstruction from
+                  Large Point Sets},
+  journal =  {Computers \& Graphics},
+  volume =   {31},
+  number =   {2},
+  pages =  {190--204},
+  year =   {2007}
+}
+
+@article{oudot2010,
+  title =  {Meshing volumes with curved boundaries},
+  author =   {Oudot, S. and Rineau, L. and Yvinec, M.},
+  journal =  {Engineering with Computers},
+  volume =   {26},
+  number =   {3},
+  pages =  {265--279},
+  year =   {2010},
+  publisher =  {Springer}
+}
+
+@inproceedings{bern1995,
+  author =   {Bern, M. and Chew, P. and Eppstein, D.
+                  and Ruppert, J.},
+  title =  {Dihedral bounds for mesh generation in high
+                  dimensions},
+  booktitle =  sodatitle,
+  year =   {1995},
+  pages =  {189--196},
+  publisher =  {SIAM}
+} 
+
+@inproceedings{boissonnat2010,
+  author =   {Boissonnat, J.-D. and Ghosh, A.},
+  title =  {Manifold reconstruction using tangential {D}elaunay
+                  complexes},
+  booktitle =  scgtitle,
+  year =   {2010},
+  pages =  {324--333},
+  publisher =  {ACM},
+  address =  {New York, NY, USA},
+} 
+
+@techreport{boissonnat2011tancplx,
+  author =   {Boissonnat, J.-D. and Ghosh, A.},
+  title =  {Manifold Reconstruction using Tangential {D}elaunay
+                  Complexes},
+  institution =  {INRIA},
+  number =   {RR-7142 v.3},
+  year =   {2011},
+  note =   {(To appear in DCG)}
+}
+
+@article{boissonnat2013tancplx,
+  author =      "Jean-Daniel Boissonnat and Arijit Ghosh",
+  title =       "Manifold reconstruction using Tangential {Delaunay} Complexes",
+  year = 2013,
+  journal = "Discrete and computational Geometry",
+  number = "November",
+  year = 2103
+}
+
+
+@article{boissonnat2010meshing,
+  author =   {Boissonnat, J.-D. and Ghosh, A.},
+  title =  {Triangulating Smooth Submanifolds with Light Scaffolding},
+  journal =  {Mathematics in Computer Science},
+  volume =   {4},
+  number =   {4},
+  pages =  {431--461},
+  year =   {2010}
+}
+                  
+%% inria-00615486, version 1
+%% http://hal.inria.fr/inria-00615486
+@techreport{boissonnat2011aniso.tr,
+  url =    {http://hal.inria.fr/inria-00615486},
+  title =  {Anisotropic {D}elaunay Mesh Generation},
+  author =   {Boissonnat, J.-D. and Wormser, C. and Yvinec, M.},
+  institution =  {INRIA},
+  number =   {RR-7712},
+  year =   {2011},
+  pdf =    {http://hal.inria.fr/inria-00615486/PDF/RR-7712.pdf}
+}
+                  
+
+
+@misc{gunawan2004,
+  author =   {Gunawan, H. and Neswan, O.},
+  title =  {On angles between subspaces of inner product spaces},
+  year =   {2004},
+  note =         {personal.fmipa.itb.ac.id/hgunawan/files/2007/11/guneswan.pdf}
+}
+
+@article{Boissonnat:2015:ADM:2742222.2721895,
+ author = {Boissonnat, Jean-Daniel and Shi, Kan-Le and Tournois, Jane and Yvinec, Mariette},
+ title = {Anisotropic {D}elaunay Meshes of Surfaces},
+ journal = {ACM Trans. Graph.},
+ volume = {34},
+ number = {2},
+ year = {2015},
+ issn = {0730-0301},
+ pages = {14:1--14:11},
+ articleno = {14},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/2721895},
+ doi = {10.1145/2721895},
+ acmid = {2721895},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@incollection {attali2009,
+  author =   {Attali, D. and Boissonnat, J.-D. and Edelsbrunner,
+                  H.},
+  title =  {Stability and Computation of Medial Axes - a
+                  State-of-the-Art Report},
+  booktitle =  {Mathematical Foundations of Scientific
+                  Visualization, Computer Graphics, and Massive Data
+                  Exploration},
+  series =   {Mathematics and Visualization},
+  publisher =  {Springer Berlin Heidelberg},
+  pages =  {109-125},
+  year =   {2009}
+}
+
+@article{boissonnat2009,
+  author =   {Boissonnat, J.-D. and Guibas, L. J. and
+                  Oudot, S. Y.},
+  title =  {Manifold Reconstruction in Arbitrary Dimensions
+                  Using Witness Complexes},
+  journal =  DCGtitle,
+  volume =   {42},
+  issue =  {1},
+  year =   {2009},
+  pages =  {37--70},
+  publisher =  {Springer-Verlag New York, Inc.}
+} 
+
+
+@article{niyogi2008,
+  author =   {P. Niyogi and S. Smale and S. Weinberger},
+  title =  {Finding the Homology of Submanifolds with High
+                  Confidence from Random Samples},
+  journal =  DCGtitle,
+  volume =   {39},
+  number =   {1-3},
+  pages =  {419-441},
+  year =   {2008}
+}
+
+
+@inproceedings{cheng2005,
+  author =   {Cheng, S.-W. and Dey, T. K. and Ramos, E.
+                  A.},
+  title =  {Manifold reconstruction from point samples},
+  booktitle =  sodatitle,
+  pages =  {1018--1027},                  
+  year =   {2005}
+} 
+%   publisher =  {{SIAM}}
+
+@book{jost2002,
+  author =   {Jost, J.},
+  title =  {{R}iemannian Geometry and Geometric Analysis},
+  edition =  {third},
+  publisher =  {Springer},
+  year =   {2002}
+}
+
+@book{boissonnat1998,
+  author =   {Boissonnat, J.-D. and Yvinec, M.},
+  title =  {Algorithmic geometry},
+  publisher =  {Cambridge University Press},
+  year =   {1998}
+}
+
+@article {deSilva2008,
+  author =   {de Silva, V.},
+  title =  {A weak characterisation of the {D}elaunay
+                  triangulation},
+  journal =  {Geometriae Dedicata},
+  publisher =  {Springer Netherlands},
+  pages =  {39-64},
+  volume =   {135},
+  issue =  {1},
+  year =   {2008}
+}
+
+@book{whitney1957,
+  author =   {Whitney, H.},
+  title =  {Geometric Integration Theory},
+  publisher =  {Princeton University Press},
+  year =   {1957}
+}
+
+@book{hirsch1976,
+  author =   {Hirsch, M. W.},
+  title =  {Differential Topology},
+  publisher =  {Springer-Verlag},
+  year =   {1976}
+}
+
+@BOOK{SpivakI,
+  AUTHOR =       {Spivak, M.},
+  TITLE =        {{A comprehensive introduction to differential geometry: Volume I}},
+  PUBLISHER =    {Publish or Perish},
+  YEAR =         {2005},
+}
+
+
+@book{burago2001,
+  author =   {Burago, D. and Burago, Y. and Ivanov, S.},
+  title =  {A course in metric geometry},
+  series =   {Graduate Studies in Mathematics},
+  volume =   {33},
+  publisher =  {American Mathematical Society},
+  year =   {2001}
+}
+
+@misc{ghrist2011,
+  author =   {Ghrist, R.},
+  title =  {Elementary Applied Topology},
+  note =   {http://www.math.upenn.edu/~ghrist/notes.html
+                  accessed Nov. 2011}
+}
+
+@inproceedings{agarwal2010scg,
+  author =   {Agarwal, P. K. and Gao, J. and Guibas, L.
+                  and Kaplan, H. and Koltun, V. and Rubin,
+                  N. and Sharir, M.},
+  title =  {Kinetic stable {D}elaunay graphs},
+  booktitle =  scgtitle,
+  pages =  {127--136},
+  year =   {2010}                  
+} 
+%  publisher =   {ACM},
+%  address =   {New York, NY, USA}
+                  
+
+@inproceedings{salesin1989,
+  author =   {Salesin, D. and Stolfi, J and Guibas, L.},
+  title =  {Epsilon geometry: building robust algorithms from
+                  imprecise computations},
+  booktitle =  scgtitle,
+  pages =  {208--217},                  
+  year =   {1989}
+} 
+%  publisher =   {ACM},
+%  address =   {New York, NY, USA},
+
+
+@article{boissonnat2008aniso,
+ author = {Boissonnat, J.-D. and Wormser, C. and Yvinec, M.},
+ title = {Anisotropic diagrams: {L}abelle {S}hewchuk approach revisited},
+ journal = {Theoret. Comput. Sci.},
+ volume = {408},
+ issue = {2-3},
+ year = {2008},
+ pages = {163--173},
+ publisher = {Elsevier Ltd.},
+ address = {Essex, UK}
+} 
+
+                  
+@inproceedings{bandyopadhyay2004,
+  author =   {Bandyopadhyay, D. and Snoeyink, J.},
+  title =  {Almost-{D}elaunay simplices: nearest neighbor
+                  relations for imprecise points},
+  booktitle =  {SODA},
+  year =   {2004},
+  pages =  {410-419}
+}
+
+
+@article{gonzales1985,
+  author =   {Gonzales, T.},
+  title =  {Clustering to minimize the maximum intercluster
+                  distance},
+  journal =  {Theoret. Comput. Sci.},
+  volume =   {38},
+  year =   {1985},
+  issn =   {0304-3975},
+  pages =  {293--306}
+} 
+
+@article{ehrlich1974,
+  author =   {Ehrlich, P.},
+  title =  {Continuity properties of the injectivity radius
+                  function},
+  journal =  {Composito Mathematica},
+  volume =   {29},
+  pages =  {151--178},
+  year =   {1974}
+}
+
+@article{sakai1983,
+  author =   {Sakai, T.},
+  title =  {On continuity of injectivity radius function},
+  journal =  {Mathematical Journal of Okayama University},
+  volume =   {25},
+  number =   {1},
+  pages =  {91--97},
+  year =   {1983}
+}
+
+
+@inproceedings{funke2005,
+  author =   {Funke, S. and Klein, C. and Mehlhorn,
+                  K. and Schmitt, S.},
+  title =  {Controlled perturbation for {D}elaunay triangulations},
+  booktitle =  sodatitle,
+  pages =  {1047--1056},                  
+  year =   {2005}
+}                   
+
+
+@article{li2003,
+  author =   {Li, X-Y.},
+  title =  {Generating Well-Shaped $d$-dimensional
+                  {D}elaunay Meshes},
+  journal =  {Theoretical Computer Science},
+  publisher =  {Elsevier Ltd.},
+  volume =   {296},
+  number =   {1},
+  pages =  {145-165},
+  year =   {2003}
+}
+
+@article{cheng2000,
+  author =   {S.-W. Cheng and T. K. Dey and H. Edelsbrunner and
+                  M. A. Facello and S. -H Teng},
+  title =  {Sliver exudation},
+  journal =  {Journal of the {ACM}},
+  year =   {2000},
+  volume =   {47},
+  number =   {5},
+  pages =  {883--904}
+}
+
+@inproceedings{canas2012,
+  author =   {G. D. Ca{\~n}as and S. J. Gortler},
+  title =  {Duals of Orphan-Free Anisotropic {V}oronoi Diagrams
+                  are embedded meshes},
+  booktitle =  scgtitle,
+  publisher =  {ACM},
+  address =  {New York, NY, USA},
+  pages =  {219--228},
+  year =   {2012}
+}
+
+
+@inproceedings{edelsbrunner2000smoothing,
+  title =  {Smoothing and cleaning up slivers},
+  author =   {Edelsbrunner, H. and Li, X.Y. and Miller, G. and
+                  Stathopoulos, A. and Talmor, D. and Teng, S.H. and
+                  {\"U}ng{\"o}r, A. and Walkington, N.},
+  booktitle =  stoctitle,
+  pages =  {273--277},
+  year =   {2000},
+  organization = {ACM}
+}
+
+
+@inproceedings{caroli2011,
+  author =   {Caroli, M. and Teillaud, M.},
+  title =  {{D}elaunay triangulations of point sets in closed
+                  {E}uclidean $d$-manifolds},
+  booktitle =  scgtitle,
+  year =   {2011},
+  pages =  {274--282},
+  publisher =  {ACM}
+} 
+
+@book{conway1988sphere,
+  title={Sphere packings, lattices and groups},
+  author={Conway, J. and Sloane, N.J.A.},
+  volume={290},
+  year={1988},
+  publisher={Springer-Verlag}
+}
+
+@article{cheeger1984,
+  title={On the curvature of piecewise flat spaces},
+  author={Cheeger, Jeff and M{\"u}ller, Werner and Schrader, Robert},
+  journal={Communications in mathematical Physics},
+  volume={92},
+  number={3},
+  pages={405--454},
+  year={1984},
+  publisher={Springer}
+}
+
+
+
+@article{BoissonnatNN10-Bregman,
+  author    = {Boissonnat, J.-D. and Nielsen, F. and Nock, R.},
+  title     = {Bregman {V}oronoi {D}iagrams},
+  journal   = {Discrete {\&} {C}omputational {G}eometry},
+  volume    = {44},
+  number    = {2},
+  year      = {2010},
+  pages     = {281-307},
+  ee        = {http://dx.doi.org/10.1007/s00454-010-9256-1},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+
+@article{Aurenhammer87,
+  author    = {Aurenhammer, F.},
+  title     = {Power {D}iagrams: {P}roperties, {A}lgorithms and {A}pplications},
+  journal   = {SIAM J. Comput.},
+  volume    = {16},
+  number    = {1},
+  year      = {1987},
+  pages     = {78-96},
+  ee        = {http://dx.doi.org/10.1137/0216006},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+
+
+%% hal-00756522, version 2
+%% http://hal.inria.fr/hal-00756522
+@techreport{bogdanov:hal-00756522,
+    url = {http://hal.inria.fr/hal-00756522},
+    title = {{Hyperbolic {D}elaunay complexes and {V}oronoi diagrams made practical}},
+    author = {Bogdanov, M. and Devillers, O. and Teillaud, M.},
+    note= {(To appear in {\em SoCG}, 2013)},
+    institution = {INRIA},
+    number = {RR-8146},
+    year = {2012},
+    month = Nov,
+    pdf = {http://hal.inria.fr/hal-00756522/PDF/RR-8146.pdf},
+}
+
+
+%% inria-00074941, version 1
+%% http://hal.inria.fr/inria-00074941
+@techreport{devillers:inria-00074941, 
+    url = {http://hal.inria.fr/inria-00074941},
+    title = {{The space of spheres, a geometric tool to unify duality results on Voronoi diagrams}},
+    author = {Devillers, O. and Meiser, S. and Teillaud, M.},
+    institution = {INRIA},
+    number = {RR-1620},
+    year = {1992},
+    pdf = {http://hal.inria.fr/inria-00074941/PDF/RR-1620.pdf},
+}
+
+
+@article{DBLP:journals/corr/abs-1210-8234,
+  author    = {F. Nielsen and
+               R. Nock},
+  title     = {The hyperbolic {V}oronoi diagram in arbitrary dimension},
+  journal   = {CoRR},
+  volume    = {abs/1210.8234},
+  year      = {2012},
+  ee        = {http://arxiv.org/abs/1210.8234},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/iccsa/NielsenN10,
+  author    = {F. Nielsen and
+               R. Nock},
+  title     = {Hyperbolic {V}oronoi Diagrams Made Easy},
+  booktitle = {ICCSA Workshops},
+  year      = {2010},
+  pages     = {74-80}
+}
+
+% mentions Weyl's theorem:
+@inproceedings{stewart1990,
+  author =   {G. W. Stewart},
+  title =  {Perturbation Theory for the Singular Value
+                  Decomposition},
+  booktitle =  {{SVD} and Signal Processing, {II}: Algorithms,
+                  Analysis and Applications},
+  year =   {1990},
+  pages =  {99--109},
+  publisher =  {Elsevier}
+}
+                  
+@article{weyl1912,
+  author =   {Weyl, H.},
+  title =  {{D}as asymptotische {V}erteilungsgestez der
+                  {E}igenwert linearer partieller
+                  {D}ifferentialgleichungen (mit einer {A}nwendung auf
+                  der {T}heorie der {H}ohlraumstrahlung)},
+  journal =  {Mathematische Annalen},
+  volume =   {71},
+  pages =  {441--479},
+  year =   {1912}
+}
+
+@techreport{heinonen2005,
+  title =  {Lectures on {L}ipschitz analysis},
+  author =   {Heinonen, J.},
+  institution =  {Univ. Jyv\"askyl\"a, Dept. Math. Stat.},
+  number =   {Rep. 100},
+  year =   {2005}
+}
+
+@article{kirszbraun1934,
+  author =   {Kirszbraun, M. D.},
+  title =  {\"{U}ber die zusammenziehende und {L}ipschitzsche
+                  {T}ransformationen},
+  journal =  {Fund. Math.},
+  volume =   {22},
+  pages =  {77-–108},
+  year =   {1934}
+}
+
+@unpublished{jimenez2013,
+  title =  {On Matching Point Configurations},
+  author =   {Jim{\'e}nez, D. and Petrova, G.},
+  note =   {Preprint accessed 2013.05.17:
+                  \url{http://www.math.tamu.edu/~gpetrova/JP.pdf} },
+  year =   {2013}
+}
+
+@article{hirani2012,
+  Title =  {{D}elaunay {H}odge Star},
+  Author =   {A. N. Hirani and K. Kalyanaraman and E.
+                  B. Vander{Z}ee},
+  Journal =  {Computer-Aided Design},
+  Volume =   {45},
+  Number =   {2},
+  Pages =  {540--544},
+  Year =   {2012}
+} 
+
+@book{hicks1965,
+  author =   {Hicks, N. J.},
+  title =  {Notes on Differential Geometry},
+  year =   {1965},
+  publisher =  {Van Nostrand}
+}
+
+@book{thurston1997,
+  author =   {Thurston, W. P.},
+  title =  {Three-Dimensional Geometry and Topology},
+  year =   {1997},
+  publisher =  {Princeton University Press}
+}
+
+
+@book{berger1987geometryI,
+  title =  {Geometry {I}},
+  author =   {Berger, Marcel},
+  volume =   {I},                                    
+  year =   {1987},
+  publisher =  {Springer}
+}
+
+@book{berger1987geometryII,
+  title =  {Geometry {II}},
+  author =   {Berger, M.},
+  volume =   {II},
+  year =   {1987},
+  publisher =  {Springer}
+}
+
+@unpublished{gallier2011diffgeom,
+  author =   {Gallier, J.},
+  title =  {Notes on differential geometry and {L}ie groups},
+  note =   {Unpublished manuscript accessed June 2013:
+                  \url{http://www.cis.upenn.edu/~jean/gbooks/manif.html}},
+  year =   {2011}
+}
+
+@incollection{gallier2011gluing,
+  author =   {Gallier, J.},
+  title =  {Ch. 4: Construction of Manifolds from Gluing Data},
+  booktitle =  {Notes on differential geometry and {L}ie groups},
+  note =   {Unpublished manuscript accessed June 2013:
+                  \url{http://www.cis.upenn.edu/~jean/gbooks/manif.html}},
+  year =   {2011}
+}
+
+@phdthesis{MijnProefschrift,
+  author       = {Wintraecken, M.H.M.J.}, 
+  title        = {Ambient and Intrinsic Triangulations and Topological Methods in Cosmology},
+  school       = {Rijksuniversiteit Groningen},
+  year         = 2015,
+  month        = 9,
+}
+
+@ARTICLE{Karcher,
+  AUTHOR =       {Karcher, H.},
+  TITLE =        {Riemannian Center of Mass and Mollifier Smoothing},
+  JOURNAL =      {Communications on Pure and Applied Mathematics},
+  YEAR =         {1977},
+  volume =       {30},
+  pages =        {509-541},
+}
+
+@INCOLLECTION{Karcher2,
+  author={Karcher, H.},
+  year= 1989,
+  title={Riemannian Comparison Constructions},
+  editor = {S.S. Chern},
+  booktitle= {Global Differential Geometry},
+  publisher= {The mathematical association of America},
+  pages= {170-222}
+}
+
+@BOOK{Coxeter,
+  AUTHOR =       {Coxeter, H.S.M.},
+  TITLE =        {Non-{E}uclidean geometry},
+  PUBLISHER =    {The mathematical association of America},
+  YEAR =         {1998},
+  edition =      {6},
+}
+
+@ARTICLE{Kendall,
+  AUTHOR =       {Kendall, W.S.},
+  TITLE =        {Probability, Convexity, and Harmonic Maps with Small Image {I}: Uniqueness and Fine Existence},
+  JOURNAL =      {Procedings of the London Mathematical society},
+  YEAR =         {1990},
+  volume =       {s3-61 (Issue 2)},
+  pages =        {371-406},
+}
+
+@ARTICLE{Rustamov,
+  AUTHOR =       {Rustamov, R.M.},
+  TITLE =        {Barycentric Coordinates on Surfaces},
+  JOURNAL =      {Eurographics Symposium on Geometry Processing},
+  YEAR =         {2010},
+  volume =       {29},
+  number =       {5},
+}
+
+@ARTICLE{NegativeWeights,
+  AUTHOR =       {Dyer, R. and Vegter, G. and Wintraecken, M.H.M.J.},
+  TITLE =        {Negative Barycentric Coordinate Neighbourhoods for Riemannian simplices},
+  JOURNAL =      {To be submitted},
+  YEAR =         {2015},
+}
+
+@ARTICLE{Brewin2009,
+   author = {{Brewin}, L.},
+    title = "{Riemann normal coordinate expansions using Cadabra}",
+  journal = {Classical and Quantum Gravity},
+archivePrefix = "arXiv",
+   eprint = {0903.2087},
+ primaryClass = "gr-qc",
+     year = 2009,
+    month = sep,
+   volume = 26,
+   number = 17,
+      eid = {175017},
+    pages = {175017},
+      doi = {10.1088/0264-9381/26/17/175017},
+   adsurl = {http://adsabs.harvard.edu/abs/2009CQGra..26q5017B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Hatzinikitas2000,
+   author = {{Hatzinikitas}, A.},
+    title = "{A note on Riemann normal coordinates}",
+  journal = {ArXiv High Energy Physics - Theory e-prints},
+   eprint = {hep-th/0001078},
+ keywords = {High Energy Physics - Theory},
+     year = 2000,
+    month = jan,
+   adsurl = {http://adsabs.harvard.edu/abs/2000hep.th....1078H},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Mirebeau2010,
+   author = {{Mirebeau}, J.-M.},
+    title = {Optimal meshes for finite elements of arbitrary order},
+  journal = {Constructive approximation},
+archivePrefix = "arXiv",
+   eprint = {1101.0612},
+     year = 2010,
+   volume = 32,
+   number = 2,
+      eid = {175017},
+    pages = {339-383},
+      doi = {10.1007/s00365-010-9090-y}
+}
+
+@ARTICLE{Mirebeau2014,
+   author = {{Mirebeau}, J.-M.},
+    title = { Anisotropic Fast-Marching on cartesian grids using Lattice Basis Reduction},
+  journal = {SIAM Journal on Numerical Analysis},
+archivePrefix = "arXiv",
+   eprint = {1201.1546 },
+     year = 2014,
+   volume = 52,
+   number = 4,
+      doi = {10.1137/120861667}
+}
+
+@article{du2005anisotropic,
+  title={Anisotropic centroidal {V}oronoi tessellations and their applications},
+  author={Du, Q. and Wang, D.},
+  journal={SIAM Journal on Scientific Computing},
+  volume={26},
+  number={3},
+  pages={737--761},
+  year={2005},
+  publisher={Citeseer}
+}
+
+@article{canas2011,
+  author =  {{Canas}, G.-D. and {Gortler}, S.-J.},
+  title =  {Orphan-free Anisotropic {V}oronoi Diagrams},
+  journal =  {Discrete and Computational Geometry},
+  volume =  {46},
+  number =  {3},
+  year =  {2011}
+}
+
+
+@inproceedings{cheng2006anisotropic,
+  title={Anisotropic surface meshing},
+  author={Cheng, Siu-Wing and Dey, Tamal K and Ramos, Edgar A and Wenger, Rephael},
+  booktitle={Proceedings of the seventeenth annual ACM-SIAM symposium on Discrete algorithm},
+  pages={202--211},
+  year={2006},
+  organization={Society for Industrial and Applied Mathematics}
+}
+
+@article{bowyer1981computing,
+  title={Computing {D}irichlet tessellations},
+  author={Bowyer, Adrian},
+  journal={The Computer Journal},
+  volume={24},
+  number={2},
+  pages={162--166},
+  year={1981},
+  publisher={Br Computer Soc}
+}
+
+@article{watson1981computing,
+  title={Computing the n-dimensional {D}elaunay tessellation with application to {V}oronoi polytopes},
+  author={Watson, David F},
+  journal={The computer journal},
+  volume={24},
+  number={2},
+  pages={167--172},
+  year={1981},
+  publisher={Br Computer Soc}
+}
+
+@article{borouchaki1997delaunay,
+  title={{D}elaunay mesh generation governed by metric specifications. Part I. Algorithms},
+  author={Borouchaki, Houman and George, Paul Louis and Hecht, Fr{\'e}d{\'e}ric and Laug, Patrick and Saltel, Eric},
+  journal={Finite elements in analysis and design},
+  volume={25},
+  number={1},
+  pages={61--83},
+  year={1997},
+  publisher={Elsevier}
+}
+
+@inproceedings{boissonnat2008locally,
+  title={Locally uniform anisotropic meshing},
+  author={Boissonnat, Jean-Daniel and Wormser, Camille and Yvinec, Mariette},
+  booktitle={Proceedings of the twenty-fourth annual symposium on Computational geometry},
+  pages={270--277},
+  year={2008},
+  organization={ACM}
+}
+
+@article{chen2004optimal,
+  author={{Chen}, L. and {Xu}, J},
+  title={Optimal {D}elaunay triangulations},
+  journal={Journal of Computational Mathematics},
+  volume={22},
+  pages={299--308},
+  year={2004}
+}
+
+@article{chen2007optimal,
+  author={{Chen}, L. and {Sun}, P. and {Xu}, J},
+  title={Optimal anisotropic meshes for minimizing interpolation errors in {${L}^p$-norm}},
+  journal={Mathematics of Computation},
+  volume={76},
+  pages={179--204},
+  year={2007},
+  month={January}
+}
+
+@article{Fu:2014:ASM:2661229.2661235,
+ author = {Fu, Xiao-Ming and Liu, Yang and Snyder, John and Guo, Baining},
+ title = {Anisotropic Simplicial Meshing Using Local Convex Functions},
+ journal = {ACM Trans. Graph.},
+ volume = {33},
+ number = {6},
+ year = {2014},
+ issn = {0730-0301},
+ pages = {182:1--182:11},
+ articleno = {182},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/2661229.2661235},
+ doi = {10.1145/2661229.2661235},
+ acmid = {2661235},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {anisotropic meshing, locally convex triangulation},
+}
+
+@article{shimada2000anisotropic,
+ author = {{Shimada}, K. and {Yamada}, A. and {Itoh}, T.},
+ title = {Anisotropic triangulation of parametric surfaces via close packing of ellipsoids},
+ year = {200},
+ journal = {International Journal of Computational Geometry \& Applications}
+}
+
+@article{Zhong2013particle,
+ author = {Zhong, Zichun and Guo, Xiaohu and Wang, Wenping and L{\'e}vy, Bruno and Sun, Feng and Liu, Yang and Mao, Weihua},
+ title = {Particle-based Anisotropic Surface Meshing},
+ journal = {ACM Trans. Graph.},
+ volume = {32},
+ number = {4},
+ year = {2013},
+ issn = {0730-0301},
+ pages = {99:1--99:14},
+ articleno = {99},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/2461912.2461946},
+ doi = {10.1145/2461912.2461946},
+ acmid = {2461946},
+ publisher = {ACM},
+} 
+
+@inproceedings{chen2004mesh,
+  title={Mesh smoothing schemes based on optimal {D}elaunay triangulations},
+  author={{Chen}, L.},
+  booktitle={Proceedings of the 13th International Meshing Roundtable},
+  pages={109--120},
+  year={2004},
+  organization={Sandia National Laboratories}
+}
+
+@techreport{boissonnat2008comparison,
+  author =  {Boissonnat, J.-D. and Cohen-Steiner, D. and Yvinec, M.},
+  title =  {Comparison of algorithms for anisotropic meshing and adaptive refinement},
+  institution =  {INRIA},
+  type = {Research Report},
+  number =  {ACS-TR-362603},
+  year =  {2008}
+}
+
+@article{Zhong2014anisotropic,
+ author = {{Zhong}, Zichun and {Shuai}, Liang and {Jin}, Miao and {Guo}, Xiaohu},
+ title = {Anisotropic Surface Meshing with Conformal Embedding},
+ journal = {Graph. Models},
+ volume = {76},
+ number = {5},
+ year = {2014},
+ issn = {1524-0703},
+ pages = {468--483},
+ numpages = {16},
+ url = {http://dx.doi.org/10.1016/j.gmod.2014.03.011},
+ doi = {10.1016/j.gmod.2014.03.011},
+ acmid = {2643503},
+ publisher = {Academic Press Professional, Inc.},
+ address = {San Diego, CA, USA},
+} 
+
+@book{milnor1963,
+  title =	 {Morse Theory},
+  author =	 {J. Milnor},
+  publisher =	 {Cambridge},
+  year =	 {2006},
+}
+
+@article{Tournois:2009:IDR:1531326.1531381,
+ author = {Tournois, Jane and Wormser, Camille and Alliez, Pierre and Desbrun, Mathieu},
+ title = {Interleaving {D}elaunay Refinement and Optimization for Practical Isotropic Tetrahedron Mesh Generation},
+ journal = {ACM Trans. Graph.},
+ volume = {28},
+ number = {3},
+ year = {2009},
+ issn = {0730-0301},
+ pages = {75:1--75:9},
+ articleno = {75},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/1531326.1531381},
+ doi = {10.1145/1531326.1531381},
+ acmid = {1531381},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{Alliez:2005:VTM:1073204.1073238,
+ author = {Alliez, Pierre and Cohen-Steiner, David and Yvinec, Mariette and Desbrun, Mathieu},
+ title = {Variational Tetrahedral Meshing},
+ journal = {ACM Trans. Graph.},
+ volume = {24},
+ number = {3},
+ year = {2005},
+ issn = {0730-0301},
+ pages = {617--625},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/1073204.1073238},
+ doi = {10.1145/1073204.1073238},
+ acmid = {1073238},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{Liu:2013:CSS:2461912.2461927,
+ author = {{Liu}, Yang and {Pan}, Hao and {Snyder}, John and {Wang}, Wenping and {Guo}, Baining},
+ title = {Computing Self-supporting Surfaces by Regular Triangulation},
+ journal = {ACM Trans. Graph.},
+ volume = {32},
+ number = {4},
+ year = {2013},
+ issn = {0730-0301},
+ pages = {92:1--92:10},
+ articleno = {92},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/2461912.2461927},
+ doi = {10.1145/2461912.2461927},
+ acmid = {2461927},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{Mullen:2011:HHT:2010324.1964998,
+ author = {{Mullen}, Patrick and {Memari}, Pooran and {de Goes}, Fernando and {Desbrun}, Mathieu},
+ title = {HOT: Hodge-optimized Triangulations},
+ journal = {ACM Trans. Graph.},
+ volume = {30},
+ number = {4},
+ year = {2011},
+ issn = {0730-0301},
+ pages = {103:1--103:12},
+ articleno = {103},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2010324.1964998},
+ doi = {10.1145/2010324.1964998},
+ acmid = {1964998},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{Konukoglu2007recursive,
+ title = {A Recursive Anisotropic Fast Marching Approach to Reaction Diffusion Equation: Application to Tumor Growth Modeling},
+ author = {{Konukoglu}, E. and {Sermesant}, M. and {Clatz}, O. and {Peyrat}, J.-M. and {Delingette}, H and {Ayache}, N.},
+ booktitle={Proceedings of the 20th International Conference},
+ pages={687--699},
+ year={2007},
+ doi = {10.1007/978-3-540-73273-0_57}
+}
+
+@inproceedings{Campen:2013:PAG:2600289.2600299,
+ author = {Campen, Marcel and Heistermann, Martin and Kobbelt, Leif},
+ title = {Practical Anisotropic Geodesy},
+ booktitle = {Proceedings of the Eleventh Eurographics/ACMSIGGRAPH Symposium on Geometry Processing},
+ series = {SGP '13},
+ year = {2013},
+ location = {Genova, Italy},
+ pages = {63--71},
+ numpages = {9},
+ url = {http://dx.doi.org/10.1111/cgf.12173},
+ doi = {10.1111/cgf.12173},
+ acmid = {2600299},
+ publisher = {Eurographics Association}
+}
+
+@article{Crane:2013:GHN:2516971.2516977,
+ author = {Crane, Keenan and Weischedel, Clarisse and Wardetzky, Max},
+ title = {Geodesics in Heat: A New Approach to Computing Distance Based on Heat Flow},
+ journal = {ACM Trans. Graph.},
+ volume = {32},
+ number = {5},
+ year = {2013},
+ issn = {0730-0301},
+ pages = {152:1--152:11},
+ articleno = {152},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/2516971.2516977},
+ doi = {10.1145/2516971.2516977},
+ acmid = {2516977},
+ publisher = {ACM},
+ address = {New York, NY, USA}
+}
+
+@article{Peyre:2010:GMC:1923909.1923910,
+ author = {Peyr{\'e}, Gabriel and P{\'e}chaud, Mickael and Keriven, Renaud and Cohen, Laurent D.},
+ title = {Geodesic Methods in Computer Vision and Graphics},
+ journal = {Found. Trends. Comput. Graph. Vis.},
+ volume = {5},
+ year = {2010},
+ issn = {1572-2740},
+ pages = {197--397},
+ numpages = {201},
+ url = {http://dx.doi.org/10.1561/0600000029},
+ doi = {10.1561/0600000029},
+ acmid = {1923910},
+ publisher = {Now Publishers Inc.},
+ address = {Hanover, MA, USA},
+}
+
+@article{Lloyd:2006:LSQ:2263356.2269955,
+ author = {Lloyd, S.},
+ title = {Least Squares Quantization in PCM},
+ journal = {IEEE Trans. Inf. Theor.},
+ volume = {28},
+ number = {2},
+ year = {2006},
+ issn = {0018-9448},
+ pages = {129--137},
+ numpages = {9},
+ url = {http://dx.doi.org/10.1109/TIT.1982.1056489},
+ doi = {10.1109/TIT.1982.1056489},
+ acmid = {2269955},
+ publisher = {IEEE Press},
+}
+
+@article{yoo2012triangulation,
+  title={A triangulation-invariant method for anisotropic geodesic map computation on surface meshes},
+  author={Yoo, Sang Wook and Seong, Joon-Kyung and Sung, Min-Hyuk and Shin, Sung Yong and Cohen, Elaine},
+  journal={Visualization and Computer Graphics, IEEE Transactions on},
+  volume={18},
+  number={10},
+  pages={1664--1677},
+  year={2012},
+  publisher={IEEE}
+}
+
+@article{wang2015intrinsic,
+  title={Intrinsic computation of centroidal {V}oronoi tessellation {(CVT)} on meshes},
+  author={Wang, Xiaoning and Ying, Xiang and Liu, Yong-Jin and Xin, Shi-Qing and Wang, Wenping and Gu, Xianfeng and Mueller-Wittig, Wolfgang and He, Ying},
+  journal={Computer-Aided Design},
+  volume={58},
+  pages={51--61},
+  year={2015},
+  publisher={Elsevier}
+}
+
+@article{cao2015proof,
+  title={Proof of correctness of the digital {D}elaunay triangulation algorithm},
+  author={Cao, Thanh-tung and Edelsbrunner, Herbert and Tan, Tiow-seng},
+  journal={Computational Geometry: Theory and Applications},
+  year={2015},
+  doi = {http://dx.doi.org/10.1016/j.comgeo.2015.04.001},
+  volume = {48},
+}
+
+@article{Liu:2009:CVT:1559755.1559758,
+ author = {Liu, Yang and Wang, Wenping and L{\'e}vy, Bruno and Sun, Feng and Yan, Dong-Ming and Lu, Lin and Yang, Chenglei},
+ title = {On Centroidal Voronoi Tessellation\&Mdash;Energy Smoothness and Fast Computation},
+ journal = {ACM Trans. Graph.},
+ volume = {28},
+ number = {4},
+ year = {2009},
+ issn = {0730-0301},
+ pages = {101:1--101:17},
+ articleno = {101},
+ numpages = {17},
+ url = {http://doi.acm.org/10.1145/1559755.1559758},
+ doi = {10.1145/1559755.1559758},
+ acmid = {1559758},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@techreport{boissonnat:hal-01096798,
+  TITLE = {{Only distances are required to reconstruct submanifolds}},
+  AUTHOR = {Boissonnat, Jean-Daniel and Dyer, Ramsay and Ghosh, Arijit and Oudot, Steve Y.},
+  URL = {https://hal.inria.fr/hal-01096798},
+  TYPE = {Research Report},
+  INSTITUTION = {{INRIA Sophia Antipolis}},
+  YEAR = {2014},
+  PDF = {https://hal.inria.fr/hal-01096798/file/submission-cgta.pdf},
+  HAL_ID = {hal-01096798},
+}
+
+
+@ARTICLE{EftekhariWakin2015,
+   author = {{Eftekhari}, A. and {Wakin}, M.~B.},
+    title = "{What Happens to a Manifold Under a Bi-Lipschitz Map?}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1512.06906},
+ primaryClass = "cs.IT",
+ keywords = {Computer Science - Information Theory},
+     year = 2015,
+    month = dec,
+   adsurl = {http://adsabs.harvard.edu/abs/2015arXiv151206906E},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@BOOK{JDbook,
+  AUTHOR =       {Boissonnat, J.-D. and Chazal, F. and Yvinec, M.},
+  TITLE =        {Geometry and Topology Inference},
+  PUBLISHER =    {To be completed},
+  YEAR =         {2017},
+}
+
+@article{DeyGiesen2008,
+author = {Dey, T.K. and Giesen, J. and Ramos, E.A. and Sadri, B.},
+title = {CRITICAL POINTS OF DISTANCE TO AN $\epsilon$-SAMPLING OF A SURFACE AND FLOW-COMPLEX-BASED SURFACE RECONSTRUCTION},
+journal = {International Journal of Computational Geometry \& Applications},
+volume = {18},
+number = {01n02},
+pages = {29-61},
+year = {2008},
+doi = {10.1142/S0218195908002532},
+
+URL = {http://www.worldscientific.com/doi/abs/10.1142/S0218195908002532},
+eprint = {http://www.worldscientific.com/doi/pdf/10.1142/S0218195908002532}
+}
+%&amp; 
+
+
+@article{NaturalNeighbor,
+title = {Natural neighbor coordinates of points on a surface},
+author = {Jean-Daniel Boissonnat and Fr{\'e}d{\'e}ric Cazals},
+journal = {Computational Geometry Theory \& Applications},
+volume = {19},
+number = {2--3},
+pages = {155--173},
+month = {Jul},
+year = {2001},
+doi = "http://dx.doi.org/10.1016/S0925-7721(01)00018-9",
+url = "http://www.sciencedirect.com/science/article/pii/S0925772101000189",
+}
+
+@article{sperner1980fifty,
+  title={Fifty years of further development of a combinatorial lemma},
+  author={Sperner, E},
+  journal={Numerical solution of highly nonlinear problems (Sympos. Fixed Point Algorithms and Complementarity Problems, Univ. Southampton, Southampton), Part A},
+  pages={183--197},
+  year={1980}
+}
+
+@inproceedings{attali:hal-00201055,
+  TITLE = {{Weak Witnesses for Delaunay triangulations of Submanifold}},
+  AUTHOR = {Attali, Dominique and Edelsbrunner, Herbert and Mileyko, Yuriy},
+  URL = {https://hal.archives-ouvertes.fr/hal-00201055},
+  BOOKTITLE = {{ACM Symposium on Solid and Physical Modeling}},
+  ADDRESS = {Beijing, China},
+  HAL_LOCAL_REFERENCE = {D{\'e}partement Images et Signal},
+  PAGES = {143-150},
+  YEAR = {2007},
+  MONTH = Jun,
+  KEYWORDS = {witness complexes ; restricted Delaunay triangulations ; surfaces ; curves ; Computational geometry and topology},
+  PDF = {https://hal.archives-ouvertes.fr/hal-00201055/file/WitnessSubmfld.pdf},
+  HAL_ID = {hal-00201055},
+  HAL_VERSION = {v1},
+}
+
+
+
+@ARTICLE{Scholtes2013,
+   author = {{Scholtes}, S.},
+    title = "{On hypersurfaces of positive reach, alternating Steiner formulae and Hadwiger's Problem}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1304.4179},
+ primaryClass = "math.DG",
+ keywords = {Mathematics - Differential Geometry, 53A07, 52A20},
+     year = 2013,
+    month = apr,
+   adsurl = {http://adsabs.harvard.edu/abs/2013arXiv1304.4179S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+
+@ARTICLE{Foote1984,
+   author = {{Foote}, Robert L.},
+    title = "{Regularity of the distance function}",
+  journal = {Proceedings of the American mathematical society},
+     year = 1984,
+		volume = {19},
+    number = {92},
+pages = {153--155}
+}
+
+@article{Whitehead1940,
+ ISSN = {0003486X},
+ URL = {http://www.jstor.org/stable/1968861},
+ author = {J. H. C. Whitehead},
+ journal = {Annals of Mathematics},
+ number = {4},
+ pages = {809-824},
+ publisher = {Annals of Mathematics},
+ title = {On $C^1$-Complexes},
+ volume = {41},
+ year = {1940}
+}
+
+@BOOK{coddington1987,
+  AUTHOR =       {Coddington, E.A. and Levinson, N.},
+  TITLE =        {Theory of Ordinary Differential Equations },
+  PUBLISHER =    {TATA, McGraw-Hill publishing},
+  YEAR =         {1987},
+}
+
+@article{Palais1963,
+title = "Morse theory on Hilbert manifolds ",
+journal = "Topology ",
+volume = "2",
+number = "4",
+pages = "299 - 340",
+year = "1963",
+note = "",
+issn = "0040-9383",
+doi = "http://dx.doi.org/10.1016/0040-9383(63)90013-2",
+url = "//www.sciencedirect.com/science/article/pii/0040938363900132",
+author = "Richard S. Palais"
+}
+
+
+
+@misc{Zeeman1963,
+  author       = {Zeeman, E.C.}, 
+  title        = {Seminar on combinatorial topology},
+  howpublished = {Institut des {H}autes {\'E}tudes {S}cientifiques},
+  year         = 1963,
+  note         = {http://math.ucr.edu/~res/zeeman/Zeeman%20-%20Combinatorial%20Topology%201.pdf}
+}
+
+
+@misc{TangentVar,
+  author       = {Wintraecken, M.H.M.J.}, 
+  title        = {Bounds on the angle between tangent spaces and the metric distortion for {{$C^2$}} manifolds with given positive reach},
+  howpublished = {{EuroCG}},
+  year         = 2017,
+  note         = {http://csconferences.mah.se/eurocg2017/proceedings.pdf}
+}
+
+
+@BOOK{rudin,
+  AUTHOR =       {Rudin, W.},
+  TITLE =        {Principles of mathematical Analysis },
+  PUBLISHER =    {McGraw-Hill},
+  YEAR =         {1976},
+}
